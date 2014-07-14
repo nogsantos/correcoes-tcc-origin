@@ -1,0 +1,356 @@
+\chapter{Armazém de dados}
+\label{cap:armazemdedados}
+
+%OK
+Um armazém de dados pode ser definido como um conjunto de dados destinado a auxiliar em decisões de negócios. Seus dados não são voláteis, pois uma vez carregados não podem mais sofrer alterações.
+
+Cada conjunto de dados, ao ser carregado em um Armazém de dados representa um determinado tempo que o identifica dentre os demais e fica associado a uma visão instantânea e sumarizada dos dados operacionais que corresponde ao momento de carga dos dados, para se realizar análise e tendências.
+
+Para se definir uma forma mais objetiva é importante fazer uma comparação com o conceito tradicional de banco de dados, um banco de dados que, nada mais é do que uma coleção de dados operacionais armazenados e utilizados pelo sistema de aplicações de um domínio específico, podem ser chamados de dados "operacionais" ou "primitivos".
+
+Os bancos de dados operacionais armazenam as informações necessárias para as operações diárias do domínio, são utilizados para registrar e executar operações pré-definidas, por isso seus dados podem sofrer constantes mudanças conforme as necessidades atuais. Por não ocorrer redundância nos dados e as informações históricas não ficarem armazenadas por muito tempo, este tipo de banco de dados não exige grande capacidade de armazenamento.
+
+Com base nestes conceitos pode-se concluir que o Armazém de dados não é um fim, mas sim um meio que as empresas dispõem para analisar informações históricas, podendo utilizá-las para a melhoria dos processos atuais e futuros.
+
+Resumindo as principais características de um Armazém de dados tem-se:
+
+\begin{itemize}
+	\item \textbf{Orientado a assuntos}: por exemplo, vendas de produtos a diferentes tipos de clientes, atendimentos e diagnósticos de pacientes, rendimento de estudantes;
+	\item \textbf{Integrado}: diferentes nomenclaturas, formatos e estruturas das fontes de dados precisam ser acomodadas em um único esquema para prover uma visão unificada e consistente da informação;
+	\item \textbf{Séries temporais}: o histórico dos dados por um período de tempo superior ao usual em BDs transacionais permite analisar tendências e mudanças.
+	\item \textbf{Não volátil}: Os dados de uma Armazém de dados não são modificados como em sistemas transacionais (exceto para correções), mas somente carregados e acessados para leituras, com atualizações apenas periódicas.
+\end{itemize}
+
+Observe na tabela \ref{tab:CompDwBd} uma relação de funcionalidades de um Armazém de dados e um Banco de operacional e suas diferenças:
+
+\begin{table}[!h]
+\centering
+\caption{Comparação entre DW e Bancos de dados fonte: \cite{PRIMAK}}
+\label{tab:CompDwBd} 
+\begin{tabular}{|c|c|c|}
+\hline \textbf{Características} & \textbf{Banco de dados Operacionais} & \textbf{\textit{Data Warehouse}} \\ 
+\hline Objetivo &	Operações diárias do negócio & Analisar o negócio \\
+\hline Uso & Operacional & Informativo \\
+\hline Tipo de processamento & OLTP & OLAP \\
+\hline Unidade de trabalho & Inclusão, alteração e exclusão & Carga e consulta \\
+\hline Números de usuários & Milhares & Centenas \\
+\hline Tipo de usuários & Operadores & Comunidade gerencial \\
+\hline Interação do usuário & Somente pré-definida & Pré-definida e ad-hoc \\
+\hline Volume & Megabytes – Gigabytes & Gigabytes – Terabytes \\
+\hline Histórico & 60 a 90 dias & 5 a 10 anos \\
+\hline Granularidade & Detalhados & Detalhados e resumidos \\
+\hline Redundância & Não ocorre & Ocorre \\
+\hline Estrutura & Estática & Variável \\
+\hline Manutenção desejada & Mínima & Constante \\
+\hline Acesso de registros & Dezenas & Milhares \\
+\hline Atualização & Contínua (Tempo real) & Periódica (\textit{Em batch}) \\
+\hline Integridade & Transação & A cada atualização \\
+\hline Número de índices & Poucos/Simples & Muitos/Complexos \\
+\hline Intenção dos índices  & Localizar um registro & Aperfeiçoar consultas \\
+\hline 
+\end{tabular} 
+\end{table}
+
+Para organizar os dados em um Armazém de dados, são necessários novos métodos de armazenamento, estruturação e novas tecnologias para a geração e recuperação dessas informações, essas tecnologias diferem dos padrões operacionais de sistemas de banco de dados em três maneiras:
+\begin{itemize}
+	\item Disponibilizam visualizações informativas, pesquisando, reportando e modelando capacidades que vão além dos padrões de sistemas operacionais frequentemente oferecidos;
+	\item Armazenam dados frequentemente em formato de cubo \textit{On-line Analytical Processing} (OLAP)\footnote{O OLAP (On-line Analytical Processing) oferece uma alternativa diferente. Voltado para a tomada de decisões, proporciona uma visão dos dados orientados à análise, além de uma navegação rápida e flexível. O OLAP recebe dados do OLTP para que possa realizar as análises e essa carga de dados acontece conforme a necessidade da empresa e sendo um sistema de tomada de decisão não realiza transações (INSERT, UPDATE, DELETE) \cite{AGUIARJUNIOR}.} multidimensional, permitindo rápida agregação de dados e detalhamento das análises (\textit{drilldown}, \textit{drill trought} etc.);
+	\item Dispõem de habilidade para extrair, tratar e agregar dados de múltiplos sistemas operacionais em \textit{Data Marts} ou \textit{Data Warehouses} separados.
+\end{itemize}
+
+A ferramenta de extração dos dados é uma parte muito importante do projeto do Armazém de dados, mas apenas uma pequena parcela de um conjunto bastante complexo de soluções de \textit{hardware} e \textit{Software}, e somente depois de definido e projetado o escopo do projeto e depois de construído o repositório de dados, é que se deve chegar às ferramentas de \textit{front-end} responsáveis pelo meio de campo entre as bases de dados e os usuários finais da área executiva. 
+%OK
+\section{\textit{Mercado de dados}}
+
+O mercado de dados é um sub-conjunto do armazém de dados, ou seja, o agrupamento ou sumarização dos dados em assuntos específicos e relacionados. Numa visão comparativa dos dados, onde considera-se os requisitos, escopo, integração, tempo, agregação, análise e dados voláteis, percebe-se que a diferença está no escopo, pois enquanto o armazém de dados é feito para atender um domínio como um todo, o mercado de dados é criado para atender um sub-conjunto desse domínio. Observe que atender um sub-conjunto pode significar reunir dados de outros setores, já que, na prática, raramente um único setor possui ou gera toda informação que precisa.
+%OK 
+\section{Extração, Transformação e Carga}
+
+O processo de extração, transformação e carga, referênciado por sua sigla em inglês ETL, é utilizado para efetuar a carga dos dados em um armazém de dados. A primeira parte desse processo é a extração de dados dos sistemas que podem partir de diferentes fontes, podem ser bases de dados relacionais em ambientes heterogêneos, arquivos de texto, planílhas eletrônicas, bases de dados não relacionais etc., ou seja, qualquer fonte de dados que atenda o domínio.
+
+O estágio de transformação aplica uma série de regras ou funções aos dados extraídos para derivar os dados a serem carregados. Algumas fontes de dados necessitarão de pouca manipulação de dados. Em outros casos, podem ser necessários um ou mais de um dos seguintes tipos de transformação:
+
+\begin{itemize}
+	\item Seleção de apenas determinadas colunas para carregar (ou a seleção de nenhuma coluna para não carregar);
+	\item Tradução de valores codificados (se o sistema de origem armazena 1 para sexo masculino e 2 para feminino, mas o Data Warehouse armazena M para masculino e F para feminino, por exemplo), o que é conhecido como limpeza de dados;
+	\item Codificação de valores de forma livre (mapeando “Masculino”,“1” e “Sr.” para M, por exemplo);
+	\item Derivação de um novo valor calculado (montanteVendas iqual à quantidade mutiplicado pelo preço Unitário, por exemplo);
+	\item Junção de dados provenientes de diversas fontes;
+	\item Resumo de várias linhas de dados (total de vendas para cada loja e para cada região, por exemplo);
+	\item Geração de valores de chaves substitutas (\textit{surrogate keys});
+	\item Transposição ou rotação (transformando múltiplas colunas em múltiplas linhas ou vice-versa);
+	\item Quebra de uma coluna em diversas colunas (como por exemplo, colocando uma lista separada por vírgulas e especificada como uma cadeia em uma coluna com valores individuais em diferentes colunas). 
+\end{itemize}
+
+\cite{IBL}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{./fig/fig6}
+	\caption{Fluxo geral de ETL. fonte: \cite{Sybase}}
+	\label{fig:exemploFig6}
+\end{figure}
+
+O processo de carga de um armazém de dados varia amplamente, dependendo das necessidades da organização. As informações existentes de alguns armazéns de dados podem ser substituídas semanalmente, com dados cumulativos e atualizados. No entanto outros armazém de dados (ou até mesmo partes do mesmo armazém de dados) podem ter dados adicionados a cada hora. A temporização e o alcance de reposição ou acréscimo constituem opções de projeto estratégicas que dependem do tempo disponível e das necessidades de negócios. Sistemas mais complexos podem manter um histórico e uma pista de auditoria de todas as mudanças sofridas pelos dados.
+
+% INICIA AQUI
+\section{\textit{Data Warehousing}}
+\label{cap:DWH}
+
+Para se criar relações de dados de clientes, por exemplo, é necessário um grande número de dados, estes dados são obtidos de um grande banco de dados, um \textit{Data Warehouse} como citado anteriormente nas características gerais de um \textit{Data Warehouse}, entretanto agora serão abordados aspectos mais relevantes para a mineração de dados. Somente a partir destes dados será possível utilizar as técnicas avançadas de inteligência artificial e estatística, ou seja, o Mineração de dados.
+
+\begin{quotation}
+A cada dia dados estão sendo gerados. Quando se realiza uma compra por telefone, por exemplo, o número telefônico, a duração da chamada, o número do cartão de crédito, o endereço da entrega, o produto escolhido e outros dados como nível sociocultural, preferências e \textit{hobbies}, podem ser facilmente adquiridos e armazenados em bancos de dados. 
+
+A filosofia empresarial dirigida ao cliente considera cada item de informação sobre o cliente, cada interação em pontos de venda, cada chamada ao serviço de atendimento ao cliente e cada visita a uma página da \textit{world wide web} (www) como uma oportunidade de obter dados e aprender sobre o cliente. 
+
+Certamente que obter dados não significa aprender sobre o cliente! De fato, muitas empresas armazenam Gigabytes de dados ocupando espaço e sem aprender nada acerca dos seus clientes e produtos. Nestes casos, os dados são armazenados para fins operacionais, como controle de estoque e cobrança, e após seu uso são simplesmente descartados sem a consideração de que podem representar fonte de informação valiosa para a empresa.  \cite{CARVALHO}. 
+\end{quotation}
+
+A automatização que existe hoje em todos os processos, juntamente com a ajuda dos recursos computacionais faz com que grandes quantidades de dados sejam geradas, e uma empresa para analisar seus dados, precisa encontrar uma forma de unificar e apresentar estes dados quando necessário de forma organizada. 
+
+\begin{quotation}
+Para que a mineração de dados seja realizada, é necessário o acesso a uma massa de dados limpa, consistente e unificada em sua linguagem e lógica. Certamente que analistas vêm realizando Mineração de dados há muitos anos se utilizando de ferramentas simples e bancos dedados separados, porém a construção de um \textit{Data Warehouse} em muito facilita o processo de mineração de dados e de decisão. \cite{CARVALHO}. 
+\end{quotation}
+
+\subsection{A organização dos dados}
+
+Conforme já mencionado anteriormente os dados são o ponto mais importante das técnicas de Mineração de dados e do processo de \textit{Data Warehousing}. Eles podem ser classificados de várias formas, entretanto segundo \cite{CARVALHO} o interessante para os propósitos da mineração é em termos de abstração.
+
+\begin{quotation}
+Quanto maior a abstração do dado, menor o seu volume disponível. Abstração tem relações fortes com hierarquia. Na camada mais inferior desta hierarquia, encontramos o dado operacional em grandes quantidades. Cada produto comprado, cada transação bancária, cada ligação telefônica é um dado operacional. 
+
+Normalmente, a maior dificuldade do processo de \textit{Data Warehousing}: é unificar os sistemas de aquisição destes dados operacionais que são utilizados para diferentes propósitos, com diferentes plataformas de hardware e diferentes \textit{Softwares} de aquisição. Além disso, as mudanças nos dados operacionais são muito comuns devido à, por exemplo, introdução de novos produtos, expansão de usuários e introdução de novas tecnologias. 
+
+O próximo nível na hierarquia da abstração é o dado resumido cuja função é fornecer uma fotografia que reúna de maneira condensada a informação sobre um determinado grupo volumoso de dados, como, por exemplo, os dados de um setor, produto ou filial da empresa em um certo instante ou período. Se os dados operacionais mudam, os dados resumidos não podem ser facilmente comparáveis. Uma das funções do \textit{Data Warehouse} é permitir que os dados resumidos sejam mais estáveis. 
+
+O nível de abstração imediatamente mais alto é o do modelo de dados que nos informa sobre que dados dispomos, como é sua relação com os outros dados e suas formas ou tipos. É com esta informação e com a matéria-prima dos dados operacionais que construímos os dados resumidos. Subindo mais um nível em sua hierarquia, encontramos a informação sobre o próprio dado, ou seja, o metadado.\cite{CARVALHO}.
+\end{quotation}
+
+Ainda segundo \cite{CARVALHO} Metadado é um modelo lógico do dado com suas entidades, atributos e relações significativas para o analista que realiza a mineração de dados e na para o analista de sistema que desenvolve os programas operacionais da organização.
+
+\begin{quotation}
+Metadado é uma abstração do dado. É o dado de alto nível que descreve o dado de baixo nível. Metadado é o instrumento que transforma dado "cru" em conhecimento. Pode ser útil pensar em metadado como uma "pinça" com que se pode tratar o dado cru. Por exemplo, é o metadado, na forma de definição de campo, que informa que uma dada cadeia de bits é um endereço de cliente, parte de uma imagem fotográfica ou parte do código de um programa de computador.\cite{COME}.
+\end{quotation}
+
+Um sistema eficiente de metadados permite ao usuário final do \textit{Data Warehouse} visualizar seu conteúdo entender com seus diferentes elementos se relacionam, identificar onde se encontra cada tipo de informa e adicionalmente ganhar confiança nas informações nele contidas. Finalmente o nível mais elevado de abstração presente em nossa hierarquia dos dados são as especificações das propriedades gerais e das restrições do sistema de dados.
+
+\subsection{As arquiteturas do \textit{Data Warehouse}}
+
+\begin{quotation}
+Várias foram as arquiteturas propostas para um \textit{Data Warehouse} ao longo de sua história, começando pelo \textit{Middleware} que provê uma interface comum para uma rede de sistemas de aquisição de dados distribuída pela organização e fora dela. Normalmente, estes sistemas não possuem os atributos necessários para a Mineração de dados. Os sistemas de \textit{Data Warehouse} setorizados que fornecem dados de interesse específico de um setor da empresa, são mais úteis, porém sua proliferação pode gerar problemas de comunicação e inconsistência nos dados. A direção mais promissora para o \textit{Data Warehousing} parece apontar para os sistemas \textit{multitired} capazes de reconhecer diferentes plataformas das fontes de dados, transportar os dados para um repositório central, limpá-los, descrevê-los em metadados e ainda permitir o acesso fácil através de ferramentas específicas (\textit{Data Marts}) definidas em função das necessidades de cada usuário ou grupo.\cite{CARVALHO}.
+\end{quotation}
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig9}
+  \caption{Arquitetura do \textit{Data Warehouse} geral. fonte: \cite{CARVALHO}}
+  \label{fig:exemploFig9}
+ \end{figure}
+
+\section{Data Ware Housing}
+\label{cap:DWH}
+
+\subsection{Arquiteturas alternativas}
+
+\subsubsection{Arquitetura Global}
+
+\begin{quotation}
+A arquitetura global traz a ideia de ter as informações para tomada de decisão de todos os departamentos da empresa. A arquitetura global pode ser fisicamente centralizada ou distribuída:
+\begin{itemize}
+	\item Centralizada-instalado e utilizado em um único local
+	\item Distribuída-pode estar espalhado em diversos locais físicos, como por exemplo, em diversas filiais
+\end{itemize}
+\cite{NASCIMENTO}.
+\end{quotation}
+
+Ainda segundo \cite{NASCIMENTO} esta arquitetura a implantação é demorada e complexa administração dos dados, aumentando a necessidade de mais profissionais para participarem do projeto, assim aumentado os valores a serem investidos.
+
+\subsubsection{Arquitetura de \textit{Data Mart} Independente}
+
+\begin{quotation}
+Uma arquitetura de \textit{Data Mart} independente consiste em uma série de \textit{Data Marts} independentes que são controlados por um grupo particular específico e são construídos especificamente para atender as suas necessidades. Pode existir, portanto, nenhuma conectividade entre esses \textit{Data Marts}.\cite{TURBANARONSONKINGSHARDA}
+\end{quotation}
+
+Ou seja neste tipo de arquitetura os \textit{Data Marts} são categorizados de forma que os dados existentes em cada um deles é referente somente ao interesse do setor a que ele se destina.
+
+Este tipo de implementação tem um impacto mínimo no tempo gasto e na alocação de recursos, porém a integração mínima e a falta de uma visão mais global dos dados podem representar algum tipo de empecilho.
+
+Segundo \cite{NASCIMENTO} este tipo de arquitetura traz uma implementação mais rápida e com menos recursos, pois o \textit{Data Mart} é instalado para atender um departamento específico e contém somente os dados extraídos do sistema daquele departamento, não possui integração com demais \textit{Data Marts} os custos envolvidos são menores. Como a ideia principal do \textit{DW} é ter informações gerenciais, neste caso de arquitetura somente seriam tomadas decisões no âmbito departamental.
+
+\subsubsection{Arquitetura de \textit{Data Marts} Integrados}
+
+Parecem com a Arquitetura Global, porém, os \textit{Data Marts} são separados por departamento, gerando os seus próprios dados e conectados através de interfaces de integração que possibilitam a troca de informações entre eles.
+Normalmente possuem alguns cadastros duplicados, como, por exemplo, o cadastro de clientes que acaba sendo duplicados em todos os \textit{Data Marts} dos departamentos.
+
+No formato global isso não ocorreria, pois estaria tudo centralizado, mas isso pode ser contornado tratando de forma clara as rotinas de integração.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig10}
+  \caption{Arquiteturas alternativas de um \textit{Data Warehouse}. fonte: \cite{felipelirarocha}}
+  \label{fig:exemploFig10}
+ \end{figure}
+
+
+\section{Dados}
+\label{cap:dados}
+
+Até o momento foi abordado o conceito geral de Mineração de dados, o conceito e as arquiteturas de um \textit{Data Warehouse} que é o que provê os dados necessários para a mineração de dados, ou seja, a matéria prima que será utilizada. Entretanto estes dados possuem características que serão abordadas a partir de agora.
+
+\section{Os tipos de dados}
+\label{cap:tiposDados}
+
+Segundo \cite{TANSTEINBACHKUMAR} os conjuntos de dados diferem de diversas formas, como por exemplo, os atributos usados para descrever objetos de dados podem ser de diferentes tipos - quantitativos ou qualitativos - e podem ter características especiais.
+
+\begin{quotation}
+Alguns conjuntos de dados contêm séries de tempos ou objetos com relacionamentos explícitos entre si, e isso determina quais ferramentas e técnicas podem ser usadas para analisar os dados. Além disso, novas pesquisas em mineração de dados são muitas vezes guiadas pela necessidade de acomodar novas áreas de aplicações e seus novos tipos de dados.
+Os dados muitas vezes estão longe da perfeição e embora a maior parte das técnicas de mineração de dados pode tolerar algum nível de imperfeição nos dados, um foco na compreensão e melhora da qualidade dos dados geralmente melhora a qualidade das análises resultantes.
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+Um conjunto de dados muitas vezes pode ser visto como uma coleção de objetos de dados, outros nomes para um objeto de dados são registros, ponteiros, vetores, padrões, eventos, casos, exemplos, observações ou entidades. Por sua vez, objetos de dados são descritos por um número de atributos que capturam as características básicas de um objeto, como a massa de um objeto físico ou o tempo no qual um evento tenha ocorrido. Conforme Tan, Steinbach e Kumar (2009) outros nomes para um atributo são variável, característica, campo, recurso ou dimensão.
+
+\begin{quotation}
+Exemplo: Muitas vezes, um conjunto de dados é um arquivo, no qual os objetos são registros (ou linhas) no arquivo e cada campo (ou coluna) corresponde a um atributo. Por exemplo, a seguir mostra um conjunto de dados que consiste de informações sobre alunos. Cada linha corresponde a um aluno e cada coluna é um atributo que descreve algum aspecto de um aluno, como a média (GPA) ou número de identificação (ID). (TAN; STEINBACH; KUMAR, 2009, p. 3).
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+\begin{table*}[!h]
+\centering
+\caption{Dados de exemplo contendo informações de alunos. Fonte: \cite{TANSTEINBACHKUMAR}}
+\label{tab:DadosAlun} 
+\begin{tabular}{|c|c|c|c|}
+\hline \textbf{ID Aluno} & \textbf{Ano} & \textit{Medida GPA} & \textit{\vdots} \\ 
+\hline  & \vdots &  & \\ 
+\hline 1034262 & Terceiro & 3,24 & \vdots \\ 
+\hline 1052663 & Segundo & 3,51 & \vdots \\ 
+\hline 1082246 & Primeiro & 3,62 & \vdots\\ 
+\hline \vdots & \vdots & \vdots & \vdots\\ 
+\hline 
+\end{tabular} 
+\end{table*}
+
+Embora conjuntos de dados baseados em registros sejam comuns, tanto em arquivos horizontais ou quanto em sistemas de bancos de dados relacionais, há outros tipos importantes de conjuntos de dados e sistemas para armazenamento de dados. Neste sentido, será abordado alguns dos tipos de conjuntos de dados que são comumente encontrados na mineração dedados.
+
+\subsection{Atributos e medidas}
+
+O que é um atributo?
+Segundo \cite{TANSTEINBACHKUMAR} “Um atributo é uma propriedade ou característica de um objeto que pode variar, seja de um objeto para outro ou de tempo para outro”.
+
+Por exemplo, a cor dos olhos varia de pessoa para pessoa, enquanto que a temperatura de um objeto varia com o tempo. Observe que a cor dos olhos é um atributo simbólico com um pequeno número de valores possíveis {marrom, preto, azul, verde, castanho, etc.}, enquanto que a temperatura é um atributo numérico com um número potencialmente ilimitado
+de valores.
+
+\begin{quotation}
+No nível mais básico, os atributos não se relacionam com números ou símbolos. Entretanto, para discutir e analisar com maior precisão as características de objetos atribuímos números ou símbolos a eles. Para fazer isso de uma forma bem definida, precisamos de uma escala de medição.
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+Ainda para os atributos os autores tem uma segunda definição:
+
+\begin{quotation}
+Uma escala de medição é uma regra (função) que associa um valor numérico ou simbólico a um atributo de um objeto. Formalmente, o processo de medição é a aplicação de uma escala de medida associada a um determinado atributo de um objeto específico.
+
+Embora isto possa parecer um pouco abstrato, nos dedicamos ao processo de medição todo o tempo. Por exemplo, subimos em uma balança de banheiro para determinar nosso peso, classificamos alguém como sendo do sexo masculino ou feminino ou contamos o número de cadeiras em uma sala para ver se haverá assentos para todas as pessoas que vierem à uma reunião. Em
+todos esses casos, o "valor físico" de um atributo de um objeto é mapeado para um valor numérico ou simbólico.
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+Com esta fundamentação, torna-se possível discutir o tipo de um atributo, um conceito importante para determinar se uma técnica de análise de dados específica é consistente com um determinado tipo de atributo.
+
+\subsection{O tipo de um atributo}
+
+A determinação do tipo de um atributo é importante para que se possa determinar qual ação será mais adequada a ele e até mesmo se ele deve fazer parte de uma ação, conforme afirma Tan, Steinbach e Kumar (2009) a seguir:
+
+\begin{quotation}
+O tipo de atributo nos informa quais propriedades do mesmo são refletidas nos valores usados para medi-lo. Conhecer o tipo de um atributo é importante porque nos informa quais propriedades dos valores medidos são consistentes com as propriedades correspondentes do atributo e, portanto, evita que executemos ações tolas, como calcular a média das IDs dos
+funcionários. Observe que é comum se referir ao tipo de um atributo como o tipo de uma escala de medição.
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+Exemplo: (Idade e Número de ID do Funcionário). Dois atributos que poderiam ser associados a um funcionário são sua ID e idade (em anos), ambos os atributos podem ser representados como números inteiros. Entretanto, embora seja razoável falar em média de idade de um funcionário, não faz sentido falar em média de ID do funcionário. De fato, o único aspecto dos funcionários que pretende-se capturar com o atributo ID é que eles são distintos e consequentemente, a única operação válida para IDs de funcionários é testar se são iguais.
+
+Para o atributo idade, as propriedades dos números inteiros usadas para representar a idade são bem as propriedades do atributo. Mesmo assim, a correspondência (Relação de Inteiros e Idades) não é completa, já que, por exemplo, idades têm um máximo, enquanto que números inteiros não.
+
+\subsection{Tipos de conjunto de dados}
+
+\textbf{Dados de registro:} Grande parte do trabalho de mineração de dados supõe que o conjunto de dados seja uma coleção de registros (objetos de dados), cada um dos quais consistindo de um conjunto fixo de campos de dados (atributos). Dados em registros geralmente são armazenados em arquivos horizontais ou em bancos de dados relacionais. Bancos de dados
+relacionais são certamente mais do que uma coleção de registros, porém a mineração de dados muitas vezes não usa algumas das informações adicionais disponíveis em um banco de dados relacional, ao invés disso, o banco de dados serve como um lugar conveniente para encontrar registros.
+
+\textbf{Dados de transação:} É um tipo especial de dados em registros, onde cada registro (transação) envolve um conjunto de itens. Considere uma mercearia, o conjunto de produtos comprados por um cliente durante uma ida à mercearia constitui uma transação, enquanto que os produtos individuais que foram comprados são os itens.
+
+Este tipo de dado é chamado de dado de cesta de mercado porque os itens em cada registro são os produtos em uma "cesta de mercado" de uma pessoa. Dados de transação é uma coleção de conjuntos de itens, mas podem ser vistos como um conjunto de registros cujos campos são atributos assimétricos.
+
+Com maior frequência, os atributos são binários, indicando se um item foi comprado ou não, porém, mais comumente, os atributos podem ser discretos ou contínuos, como o número de itens comprados ou a quantia gasta nesses itens.
+
+\begin{table*}[!h]
+\centering
+\caption{Dados em registros. Fonte: \cite{TANSTEINBACHKUMAR}}
+\label{tab:DadosReg} 
+\begin{tabular}{|c|c|c|c|c|}
+\hline \textbf{TID} & \textbf{Reembolso} & \textbf{Estado Civil} & \textbf{Renda tributável} & \textbf{Tomador de empréstimo em dívida} \\ 
+\hline 1 & Sim & Solteiro & 125K & Não\\
+\hline 2 & Não & Casado & 100K & Não\\
+\hline 3 & Não & Solteiro & 70K & Não\\
+\hline 4 & Sim & Casado & 120K & Não\\
+\hline 5 & Não & Divorciado & 95K & Sim\\
+\hline 6 & Não & Casado & 60K & Não\\
+\hline 7 & Sim & Divorciado & 220K & Não\\
+\hline 8 & Não & Solteiro & 85K & Sim\\
+\hline 9 & Não & Casado & 75K & Não\\
+\hline 10 & Não & Solteiro & 90K & Sim\\ 
+\hline 
+\end{tabular} 
+\end{table*}
+
+
+\begin{table*}[!h]
+\centering
+\caption{Dados de transação. Fonte: \cite{TANSTEINBACHKUMAR}}
+\label{tab:DadosTrans} 
+\begin{tabular}{|c|c|}
+\hline \textbf{TID} & \textbf{Itens} \\ 
+\hline 1 & Pão, Refrigerante, Leite\\ 
+\hline 2 & Cerveja, Pão\\ 
+\hline 3 & Cerveja, Refrigerante, Fralda, Leite\\ 
+\hline 4 & Cerveja, Pão, Fralda, Leite\\ 
+\hline 5 & Refrigerante, Fralda, Leite\\ 
+\hline 
+\end{tabular} 
+\end{table*}
+
+\section{Qualidade dos dados}
+
+Aplicações de mineração de dados são muitas vezes aplicadas a dados que foram coletados para outro propósito, ou para aplicações futuras, porém não especificadas. Por este motivo, a mineração de dados geralmente não pode aproveitar os significativos benefícios de “abordar questões de qualidade na fonte".
+
+\begin{quotation}
+Em comparação, grande parte das estatísticas lida com o projeto de experimentos ou pesquisas que obtêm um nível pré-especificado de qualidade de dados. Devido ao fator de se evitar problemas de qualidade de dados geralmente não ser uma opção, a mineração de dados enfoca a detecção e correção de problemas de qualidade de dados e o uso de algoritmos que possam tolerar baixa qualidade de dados.
+
+O primeiro passo, a detecção e correção, é muitas vezes chamado de limpeza dos dados. A próxima seção discute aspectos específicos de qualidade de dados. O foco são questões de medição e coleta de dados, embora alguns problemas relacionados a aplicações também sejam discutidos.
+\cite{TANSTEINBACHKUMAR}. 
+\end{quotation}
+
+\section{Trabalhando os dados}
+
+Os dados são a principal fonte para a mineração de dados, entretanto estes dados podem ser de diferentes tipos e origens, levando com que ocorram distorções na mineração. Sendo assim para se trabalhar com os dados são necessários algumas etapas para o preparo dos mesmos para o processo de mineração a primeira etapa é a de pré-processamento.
+
+\begin{quotation}
+A etapa de pré-processamento, no processo de descoberta de conhecimento – \textit{KDD} (\textit{Knowledge Discovery in databases}) compreende a aplicação de várias técnicas para captação, organização, tratamento e a preparação dos dados. É uma etapa que possui fundamental relevância no processo de KDD.
+\cite{GPEA}. 
+\end{quotation}
+
+Compreende desde a correção de dados errados até o ajuste da formatação dos dados para os algoritmos de mineração de dados que serão utilizados. \cite{GPEA}.
+
+Segundo \cite{GPEA} algumas das principais funções da etapa de pré-processamento dos dados:
+
+\begin{itemize}
+	\item \textbf{Seleção de atributos} – A Seleção de Atributos é uma etapa da fase de pré-processamento do processo de Descoberta de Conhecimento em Banco de Dados. Como o próprio nome já diz, o objetivo é escolher um subconjunto de atributos
+(também conhecidos como variáveis) ou criar outros atributos que substituam um conjunto deles a fim de reduzir a dimensão do banco de dados. Com essa redução de dimensão, reduz-se a complexidade do banco de dados e assim o tempo de processamento para extrair dele algum conhecimento. Além disso, atributos desnecessários podem causar ruído no resultado final e isto pode ser evitado com a aplicação de técnicas de Seleção de Atributos. Saiba mais.
+	\item \textbf{Limpeza dos dados} - abrange qualquer tratamento realizado sobre os dados selecionados de forma a assegurar a qualidade (completude, veracidade e integridade) os fatos por eles representados. Informações ausentes, errôneas ou inconsistentes nas bases de dados devem ser corrigidas de forma a não comprometer a qualidade dos
+modelos de conhecimento a serem extraídos ao final do processo de KDD.
+	\item \textbf{Discretização} - alguns algoritmos de mineração de dados, especialmente os algoritmos de classificação, requerem que os dados estejam na forma de atributos categorizados. Assim, muitas vezes é necessário transformar um atributo contínuo em categórico.
+	\item \textbf{Binarização} - Algoritmos utilizados para descoberta de padrões de associação requerem que os dados estejam na forma de atributos binários. Assim, muitas vezes tanto os atributos contínuos quanto os discretos necessitam ser transformados em um ou mais atributos binários.
+	\item \textbf{Construção de atributos} - essa operação consiste em gerar novos atributos a partir dos atributos existentes. A importância desse tipo de operação é justificada pois novos atributos, além de expressarem relacionamentos conhecidos entre atributos existentes, podem reduzir o conjunto de dados simplificando o processamento dos algoritmos de
+Mineração de Dados.
+	\item \textbf{Transformação de variáveis} - se refere a uma transformação que seja aplicada a todos os valores de um atributo. Em outras palavras, para cada objeto, a transformação é aplicada ao valor do atributo para aquele objeto. Uma transformação que pode-se citar é a normalização dos dados, que consiste em ajustar a escala dos valores de cada atributo de forma que os valores fiquem em pequenos intervalos, tais como de -1 a 1 ou de 0 a 1. Tal ajuste se faz necessário para evitar que alguns atributos, por apresentarem uma escala de valores maior que outros, influenciem de forma tendenciosa determinados métodos de Mineração de Dados.
+\end{itemize}

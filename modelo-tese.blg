@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: modelo-tese.aux
+The style file: inf-ufg.bst
+Database file #1: ./bib/modelo-tese.bib
+You've used 41 entries,
+            2158 wiz_defined-function locations,
+            741 strings with 10962 characters,
+and the built_in function-call counts, 9030 in all, are:
+= -- 773
+> -- 293
+< -- 0
++ -- 126
+- -- 84
+* -- 394
+:= -- 1520
+add.period$ -- 155
+call.type$ -- 41
+change.case$ -- 157
+chr.to.int$ -- 0
+cite$ -- 41
+duplicate$ -- 404
+empty$ -- 972
+format.name$ -- 84
+if$ -- 1921
+int.to.chr$ -- 0
+int.to.str$ -- 41
+missing$ -- 17
+newline$ -- 240
+num.names$ -- 82
+pop$ -- 308
+preamble$ -- 1
+purify$ -- 124
+quote$ -- 0
+skip$ -- 206
+stack$ -- 0
+substring$ -- 206
+swap$ -- 115
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 148
+warning$ -- 0
+while$ -- 82
+width$ -- 43
+write$ -- 452

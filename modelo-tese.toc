@@ -1,0 +1,66 @@
+\select@language {brazil}
+\contentsline {chapter}{Lista de Figuras}{10}{Doc-Start}
+\contentsline {chapter}{Lista de Tabelas}{11}{Doc-Start}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{12}{chapter.1}
+\contentsline {chapter}{\numberline {2}Intelig\^encia de neg\'ocio}{14}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Hist\'orico}{14}{subsection.3}
+\contentsline {section}{\numberline {2.1}Dado, informa\c c\~ao, conhecimento e decis\~ao}{15}{section.5}
+\contentsline {subsection}{\numberline {2.1.1}Dado}{15}{subsection.7}
+\contentsline {subsection}{\numberline {2.1.2}Informa\c c\~ao}{16}{subsection.8}
+\contentsline {subsection}{\numberline {2.1.3}Conhecimento}{16}{subsection.9}
+\contentsline {chapter}{\numberline {3}Armaz\'em de dados}{17}{chapter.10}
+\contentsline {section}{\numberline {3.1}\textit {Mercado de dados}}{19}{section.13}
+\contentsline {section}{\numberline {3.2}Extra\c c\~ao, Transforma\c c\~ao e Carga}{19}{section.14}
+\contentsline {section}{\numberline {3.3}\textit {Data Warehousing}}{21}{section.16}
+\contentsline {subsection}{\numberline {3.3.1}A organiza\c c\~ao dos dados}{22}{subsection.17}
+\contentsline {subsection}{\numberline {3.3.2}As arquiteturas do \textit {Data Warehouse}}{23}{subsection.18}
+\contentsline {section}{\numberline {3.4}Data Ware Housing}{23}{section.20}
+\contentsline {subsection}{\numberline {3.4.1}Arquiteturas alternativas}{23}{subsection.21}
+\contentsline {subsubsection}{Arquitetura Global}{23}{section*.22}
+\contentsline {subsubsection}{Arquitetura de \textit {Data Mart} Independente}{24}{section*.23}
+\contentsline {subsubsection}{Arquitetura de \textit {Data Marts} Integrados}{25}{section*.24}
+\contentsline {section}{\numberline {3.5}Dados}{25}{section.26}
+\contentsline {section}{\numberline {3.6}Os tipos de dados}{25}{section.27}
+\contentsline {subsection}{\numberline {3.6.1}Atributos e medidas}{27}{subsection.29}
+\contentsline {subsection}{\numberline {3.6.2}O tipo de um atributo}{27}{subsection.30}
+\contentsline {subsection}{\numberline {3.6.3}Tipos de conjunto de dados}{28}{subsection.31}
+\contentsline {section}{\numberline {3.7}Qualidade dos dados}{29}{section.34}
+\contentsline {section}{\numberline {3.8}Trabalhando os dados}{30}{section.35}
+\contentsline {chapter}{\numberline {4}Minera\c c\~ao de dados}{32}{chapter.36}
+\contentsline {section}{\numberline {4.1}Descoberta de conhecimento em banco de dados}{32}{section.37}
+\contentsline {section}{\numberline {4.2}Processo de Minera\c c\~ao de dados}{33}{section.39}
+\contentsline {chapter}{\numberline {5}Ferramentas de minera\c c\~ao de dados}{35}{chapter.40}
+\contentsline {section}{\numberline {5.1}\textit {IBM SPSS Modeler}}{35}{section.41}
+\contentsline {section}{\numberline {5.2}\textit {SAP Sybase IQ}}{36}{section.44}
+\contentsline {subsection}{\numberline {5.2.1}\textit {Sybase IQ}}{37}{subsection.45}
+\contentsline {subsection}{\numberline {5.2.2}O \textit {Sybase Complex Event Processing}}{37}{subsection.46}
+\contentsline {subsection}{\numberline {5.2.3}\textit {SAP Business Objects}}{37}{subsection.47}
+\contentsline {subsection}{\numberline {5.2.4}\textit {Sybase Industry Warehouse Studio}}{38}{subsection.48}
+\contentsline {subsection}{\numberline {5.2.5}Vantagens espec\IeC {\'\i }ficas do produto}{38}{subsection.49}
+\contentsline {subsection}{\numberline {5.2.6}Vers\~oes dispon\IeC {\'\i }veis do produto}{38}{subsection.51}
+\contentsline {subsection}{\numberline {5.2.7}\textit {Sybase IQ Enterprise Edition}}{38}{subsection.52}
+\contentsline {subsection}{\numberline {5.2.8}\textit {Sybase IQ Small Business Edition}}{39}{subsection.53}
+\contentsline {subsection}{\numberline {5.2.9}\textit {Sybase IQ Single Application Server Edition}}{39}{subsection.54}
+\contentsline {section}{\numberline {5.3}\textit {Oracle Advanced Analytics}}{39}{section.55}
+\contentsline {section}{\numberline {5.4}\textit {Weka} (\textit {Waikato Environment for Knowledge Analysis})}{40}{section.56}
+\contentsline {subsubsection}{Abas e fun\c c\~oes}{41}{section*.59}
+\contentsline {chapter}{\numberline {6}Principais algor\IeC {\'\i }timos utilizados na minera\c c\~ao}{45}{chapter.76}
+\contentsline {section}{\numberline {6.1}Aplicando os Algoritmos}{45}{section.77}
+\contentsline {section}{\numberline {6.2}Algoritmo de \'Arvore de decis\~ao}{46}{section.79}
+\contentsline {subsection}{\numberline {6.2.1}Como o algoritmo funciona}{47}{subsection.81}
+\contentsline {subsection}{\numberline {6.2.2}Prevendo colunas discretas}{48}{subsection.82}
+\contentsline {subsection}{\numberline {6.2.3}Prevendo colunas cont\IeC {\'\i }nuas}{48}{subsection.85}
+\contentsline {subsection}{\numberline {6.2.4}Dados necess\'arios para modelos de \'arvore de decis\~ao}{50}{subsection.88}
+\contentsline {section}{\numberline {6.3}Algoritmo de \textit {Clustering}}{50}{section.89}
+\contentsline {subsection}{\numberline {6.3.1}Como o algoritmo funciona}{51}{subsection.91}
+\contentsline {subsection}{\numberline {6.3.2}Dados necess\'arios para modelos de \textit {clustering}}{52}{subsection.94}
+\contentsline {section}{\numberline {6.4}Algoritmo de Rede Neural}{53}{section.95}
+\contentsline {subsection}{\numberline {6.4.1}O aprendizado}{54}{subsection.96}
+\contentsline {subsection}{\numberline {6.4.2}Como o algoritmo funciona}{55}{subsection.97}
+\contentsline {subsection}{\numberline {6.4.3}Dados necess\'arios para modelos de rede neural}{56}{subsection.100}
+\contentsline {section}{\numberline {6.5}Algoritmo de Regress\~ao Linear}{57}{section.101}
+\contentsline {subsection}{\numberline {6.5.1}Como o algoritmo funciona}{58}{subsection.103}
+\contentsline {subsection}{\numberline {6.5.2}Dados requeridos para modelos de regress\~ao linear}{58}{subsection.104}
+\contentsline {chapter}{\numberline {7}Conclus\~ao}{59}{chapter.105}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{60}{chapter.105}
+\contentsfinish 

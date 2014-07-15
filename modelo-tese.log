@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.7)  14 JUL 2014 16:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.7)  15 JUL 2014 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -492,46 +492,89 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box36
 \enitdp@description=\count115
 ))
-(./modelo-tese.aux
-
-LaTeX Warning: Label `cap:DWH' multiply defined.
-
-)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count116
+\mult@box=\box37
+\multicol@leftmargin=\dimen125
+\c@unbalance=\count117
+\c@collectmore=\count118
+\doublecol@number=\count119
+\multicoltolerance=\count120
+\multicolpretolerance=\count121
+\full@width=\dimen126
+\page@free=\dimen127
+\premulticols=\dimen128
+\postmulticols=\dimen129
+\multicolsep=\skip108
+\multicolbaselineskip=\skip109
+\partial@page=\box38
+\last@line=\box39
+\mult@rightbox=\box40
+\mult@grightbox=\box41
+\mult@gfirstbox=\box42
+\mult@firstbox=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\c@columnbadness=\count122
+\c@finalcolumnbadness=\count123
+\last@try=\dimen130
+\multicolovershoot=\dimen131
+\multicolundershoot=\dimen132
+\mult@nat@firstbox=\box61
+\colbreak@box=\box62
+\multicol@sort@counter=\count124
+) (./modelo-tese.aux)
 \openout1 = `modelo-tese.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 14.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 14
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 15.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 15
 .
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-\AtBeginShipoutBox=\box37
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+\AtBeginShipoutBox=\box63
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen125
-\scratchbox=\box38
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\scratchcounter=\count125
+\scratchdimen=\dimen133
+\scratchbox=\box64
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen126
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen134
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks23
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -540,19 +583,19 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 14.
-Package hyperref Info: Link coloring OFF on input line 14.
+(lastpage)             ! on input line 15.
+Package hyperref Info: Link coloring OFF on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (./modelo-tese.out) (./modelo-tese.out)
 \@outlinefile=\write4
@@ -580,68 +623,68 @@ Package caption Info: End \AtBeginDocument code.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 55.
+(hyperref)                removing `\\' on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 55.
+(hyperref)                removing `\\' on input line 56.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 55.
+(hyperref)                removing `\\' on input line 56.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 56.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 56.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 56.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 56
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 56
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 56
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 [] $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 [] $[]$
  []
 
@@ -682,79 +725,73 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 9.85492pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 16.
+)
+\tf@toc=\write5
+\openout5 = `modelo-tese.toc'.
+
  [8
 
 
 
-])
-\tf@toc=\write5
-\openout5 = `modelo-tese.toc'.
-
- [9]
-(./modelo-tese.lof
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 8.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 8.
-)
+] (./modelo-tese.lof)
 \tf@lof=\write6
 \openout6 = `modelo-tese.lof'.
 
- [10
+
+[9
 
 
 ] (./modelo-tese.lot)
 \tf@lot=\write7
 \openout7 = `modelo-tese.lot'.
 
- [11
+ [10
 
 
 ] (./tex/cap_I.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 2.
+(Font)              scaled to size 15.55188pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 2.
+(Font)              scaled to size 22.39185pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 2.
+(Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-[12
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+[11
 
 
-]) (./tex/cap_II.tex [13]
+]) (./tex/cap_II.tex [12]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 10.
+(hyperref)                than one, level fixed on input line 8.
 
-<./fig/fig1.jpg, id=545, 952.55875pt x 265.99374pt>
+<./fig/fig1.jpg, id=307, 952.55875pt x 265.99374pt>
 File: ./fig/fig1.jpg Graphic file (type jpg)
  <use ./fig/fig1.jpg>
-Package pdftex.def Info: ./fig/fig1.jpg used on input line 24.
+Package pdftex.def Info: ./fig/fig1.jpg used on input line 22.
 (pdftex.def)             Requested size: 341.43436pt x 95.34367pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 25.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 23.
 
-[14
 
-] <./fig/fig2.jpg, id=553, 642.4pt x 401.5pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13
+
+] <./fig/fig2.jpg, id=316, 642.4pt x 401.5pt>
 File: ./fig/fig2.jpg Graphic file (type jpg)
  <use ./fig/fig2.jpg>
 Package pdftex.def Info: ./fig/fig2.jpg used on input line 34.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [15 <./fig/fig1.jpg> <./fig/fig2.jpg>]) (./tex/cap_II-I.tex [16]
+ [14 <./fig/fig1.jpg> <./fig/fig2.jpg>]) (./tex/cap_II-I.tex [15]
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 17.
-[17
+[16
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
@@ -765,281 +802,86 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
- [18]
+ [17]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 62.
- [19] <./fig/fig6.jpg, id=587, 642.4pt x 401.5pt>
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 66.
+
+[18] <./fig/fig6.jpg, id=349, 854.24763pt x 604.14471pt>
 File: ./fig/fig6.jpg Graphic file (type jpg)
-
-<use ./fig/fig6.jpg>
-Package pdftex.def Info: ./fig/fig6.jpg used on input line 88.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [20 <./fig/fig6.jpg>] [21] [22]
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 144.
-
-<./fig/fig9.jpg, id=611, 642.4pt x 401.5pt>
-File: ./fig/fig9.jpg Graphic file (type jpg)
- <use ./fig/fig9.jpg>
-Package pdftex.def Info: ./fig/fig9.jpg used on input line 152.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
+ <use ./fig/fig6.jpg>
+Package pdftex.def Info: ./fig/fig6.jpg used on input line 96.
+(pdftex.def)             Requested size: 341.43436pt x 241.46922pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23] [24 <./fig/fig9.jpg>] <./fig/fig10.jpg, id=629, 642.4pt x 401.5pt>
-File: ./fig/fig10.jpg Graphic file (type jpg)
-
-<use ./fig/fig10.jpg>
-Package pdftex.def Info: ./fig/fig10.jpg used on input line 196.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-Underfull \hbox (badness 1721) in paragraph at lines 197--197
-[][]|\T1/ptm/m/it/10.95 Ar-qui-te-tu-ras al-ter-na-ti-vas de um Data Wa-rehouse
-.
+[19]
+Underfull \hbox (badness 1122) in paragraph at lines 119--121
+[]\T1/ptm/b/n/12 Seleção de atri-bu-tos \T1/ptm/m/n/12 A se-le-ção de atri-bu-t
+os é uma etapa da fase de pré-
  []
 
-[25 <./fig/fig10.jpg>] [26] [27] [28]
-Overfull \hbox (38.94872pt too wide) in paragraph at lines 296--310
+[20 <./fig/fig6.jpg>] [21] [22] [23]
+Overfull \hbox (38.94872pt too wide) in paragraph at lines 195--209
  [][] 
  []
 
-[29] [30]) (./tex/cap_III.tex [31]
+) (./tex/cap_III.tex [24]
 Cap\'{\i }tulo 4.
-<./fig/fig8.jpg, id=679, 642.4pt x 401.5pt>
+<./fig/fig8.jpg, id=388, 642.4pt x 401.5pt>
 File: ./fig/fig8.jpg Graphic file (type jpg)
  <use ./fig/fig8.jpg>
 Package pdftex.def Info: ./fig/fig8.jpg used on input line 12.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [32
+ [25
 
- <./fig/fig8.jpg>] [33]) (./tex/cap_IV.tex [34]
+ <./fig/fig8.jpg>] [26]) (./tex/cap_V.tex [27]
 Cap\'{\i }tulo 5.
-[35
-
-] <./fig/fig11.jpg, id=698, 642.4pt x 401.5pt>
-File: ./fig/fig11.jpg Graphic file (type jpg)
- <use ./fig/fig11.jpg>
-Package pdftex.def Info: ./fig/fig11.jpg used on input line 26.
+<./fig/fig7.jpg, id=402, 642.4pt x 401.5pt>
+File: ./fig/fig7.jpg Graphic file (type jpg)
+ <use ./fig/fig7.jpg>
+Package pdftex.def Info: ./fig/fig7.jpg used on input line 8.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
+ [28
 
-<./fig/fig12.jpg, id=701, 642.4pt x 401.5pt>
-File: ./fig/fig12.jpg Graphic file (type jpg)
- <use ./fig/fig12.jpg>
-Package pdftex.def Info: ./fig/fig12.jpg used on input line 35.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[36 <./fig/fig11.jpg>] [37 <./fig/fig12.jpg>]
-<./fig/fig13.jpg, id=712, 642.4pt x 401.5pt>
-File: ./fig/fig13.jpg Graphic file (type jpg)
- <use ./fig/fig13.jpg>
-Package pdftex.def Info: ./fig/fig13.jpg used on input line 69.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [38 <./fig/fig13.jpg>] [39] <./fig/fig14.jpg, id=725, 642.4pt x 401.5pt>
-File: ./fig/fig14.jpg Graphic file (type jpg)
-
-<use ./fig/fig14.jpg>
-Package pdftex.def Info: ./fig/fig14.jpg used on input line 111.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- <./fig/fig15.jpg, id=726, 642.4pt x 401.5pt>
-File: ./fig/fig15.jpg Graphic file (type jpg)
-
-<use ./fig/fig15.jpg>
-Package pdftex.def Info: ./fig/fig15.jpg used on input line 121.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 126.
-
-[40 <./fig/fig14.jpg>] <./fig/fig16.jpg, id=733, 642.4pt x 401.5pt>
-File: ./fig/fig16.jpg Graphic file (type jpg)
-
-<use ./fig/fig16.jpg>
-Package pdftex.def Info: ./fig/fig16.jpg used on input line 134.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./fig/fig17.jpg, id=734, 642.4pt x 401.5pt>
-File: ./fig/fig17.jpg Graphic file (type jpg)
- <use ./fig/fig17.jpg>
-Package pdftex.def Info: ./fig/fig17.jpg used on input line 145.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41 <./fig/fig15.jpg>]
-Underfull \hbox (badness 1122) in paragraph at lines 158--159
-[]\T1/ptm/m/n/12 party snack fo-ods=t fruit=t to-tal=high 854 ==> bread and cak
-e=t 779
- []
-
-[42 <./fig/fig16.jpg> <./fig/fig17.jpg>]
-<./fig/fig18.jpg, id=750, 642.4pt x 401.5pt>
-File: ./fig/fig18.jpg Graphic file (type jpg)
- <use ./fig/fig18.jpg>
-Package pdftex.def Info: ./fig/fig18.jpg used on input line 171.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-<./fig/fig19.jpg, id=751, 642.4pt x 401.5pt>
-File: ./fig/fig19.jpg Graphic file (type jpg)
- <use ./fig/fig19.jpg>
-Package pdftex.def Info: ./fig/fig19.jpg used on input line 182.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./fig/fig20.jpg, id=752, 642.4pt x 401.5pt>
-File: ./fig/fig20.jpg Graphic file (type jpg)
- <use ./fig/fig20.jpg>
-Package pdftex.def Info: ./fig/fig20.jpg used on input line 190.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[43 <./fig/fig18.jpg>]) (./tex/cap_V.tex [44 <./fig/fig19.jpg> <./fig/fig20.jpg
->]
+ <./fig/fig7.jpg>] [29]) (./tex/conclusao.tex [30]
 Cap\'{\i }tulo 6.
-[45
-
-]
-Underfull \hbox (badness 1983) in paragraph at lines 42--44
-[]\T1/ptm/b/n/12 Prevendo um atri-buto dis-creto: \T1/ptm/m/n/12 Por
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[46] [47] <./fig/fig21.jpg, id=789, 642.4pt x 401.5pt>
-File: ./fig/fig21.jpg Graphic file (type jpg)
- <use ./fig/fig21.jpg>
-Package pdftex.def Info: ./fig/fig21.jpg used on input line 89.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-<./fig/fig22.jpg, id=793, 642.4pt x 401.5pt>
-File: ./fig/fig22.jpg Graphic file (type jpg)
- <use ./fig/fig22.jpg>
-Package pdftex.def Info: ./fig/fig22.jpg used on input line 98.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./fig/fig23.jpg, id=796, 642.4pt x 401.5pt>
-File: ./fig/fig23.jpg Graphic file (type jpg)
- <use ./fig/fig23.jpg>
-Package pdftex.def Info: ./fig/fig23.jpg used on input line 111.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48 <./fig/fig21.jpg>] <./fig/fig24.jpg, id=803, 642.4pt x 401.5pt>
-File: ./fig/fig24.jpg Graphic file (type jpg)
-
-<use ./fig/fig24.jpg>
-Package pdftex.def Info: ./fig/fig24.jpg used on input line 120.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[49 <./fig/fig22.jpg> <./fig/fig23.jpg>] [50 <./fig/fig24.jpg>]
-<./fig/fig25.jpg, id=814, 642.4pt x 401.5pt>
-File: ./fig/fig25.jpg Graphic file (type jpg)
- <use ./fig/fig25.jpg>
-Package pdftex.def Info: ./fig/fig25.jpg used on input line 144.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-Underfull \hbox (badness 1609) in paragraph at lines 145--145
-[][]|\T1/ptm/m/it/10.95 De-mons-tra-ção de agru-pa-mento por si-mi-la-ri-da-des
-.
- []
-
-[51 <./fig/fig25.jpg>] <./fig/fig26.jpg, id=823, 642.4pt x 401.5pt>
-File: ./fig/fig26.jpg Graphic file (type jpg)
-
-<use ./fig/fig26.jpg>
-Package pdftex.def Info: ./fig/fig26.jpg used on input line 165.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- <./fig/fig27.jpg, id=826, 642.4pt x 401.5pt>
-File: ./fig/fig27.jpg Graphic file (type jpg)
-
-<use ./fig/fig27.jpg>
-Package pdftex.def Info: ./fig/fig27.jpg used on input line 174.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[52 <./fig/fig26.jpg>] [53 <./fig/fig27.jpg>] [54]
-Underfull \hbox (badness 2932) in paragraph at lines 224--225
-[]\T1/ptm/m/n/12 Híbrido: neste tipo ocorre uma "mis-tura"dos ti-pos su-per-vi-
-si-o-nado e não-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./fig/fig28.jpg, id=848, 642.4pt x 401.5pt>
-File: ./fig/fig28.jpg Graphic file (type jpg)
- <use ./fig/fig28.jpg>
-Package pdftex.def Info: ./fig/fig28.jpg used on input line 251.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[55] [56 <./fig/fig28.jpg>] <./fig/fig29.jpg, id=858, 642.4pt x 401.5pt>
-File: ./fig/fig29.jpg Graphic file (type jpg)
-
-<use ./fig/fig29.jpg>
-Package pdftex.def Info: ./fig/fig29.jpg used on input line 271.
-(pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [57 <./fig/fig29.jpg>]) (./tex/conclusao.tex [58]
-Cap\'{\i }tulo 7.
-) [59
+) [31
 
 ] (./modelo-tese.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 10.79993pt on input line 4.
- [60
+ [32
 
 
-] [61]) [62] 
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 10.79993pt on input line 90.
+ [33]) [34] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 (./modelo-tese.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `modelo-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 45E41C3E9E6F64FFA7B838949297A751;5656.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
+(rerunfilecheck)             Checksum: 2ADD8C484F90EB9E5DA165E51C48C251;2900.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 10811 strings out of 493485
- 157026 string characters out of 3143527
- 281620 words of memory out of 3000000
- 13613 multiletter control sequences out of 15000+200000
- 129132 words of font info for 135 fonts, out of 3000000 for 9000
+ 10646 strings out of 493485
+ 154570 string characters out of 3143527
+ 282779 words of memory out of 3000000
+ 13558 multiletter control sequences out of 15000+200000
+ 123348 words of font info for 131 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,12n,46p,1163b,570s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,45p,1161b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
@@ -1048,10 +890,10 @@ elvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modelo-tese.pdf (65 pages, 2618296 bytes).
+Output written on modelo-tese.pdf (37 pages, 485027 bytes).
 PDF statistics:
- 1024 PDF objects out of 1200 (max. 8388607)
- 893 compressed objects within 9 object streams
- 223 named destinations out of 1000 (max. 500000)
- 726 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 506 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

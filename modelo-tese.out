@@ -20,56 +20,23 @@
 \BOOKMARK [2][-]{subsection.9}{2.1.3 Conhecimento}{section.5}% 20
 \BOOKMARK [0][-]{chapter.10}{3 Armaz\351m de dados}{}% 21
 \BOOKMARK [1][-]{section.13}{3.1 Mercado de dados}{chapter.10}% 22
-\BOOKMARK [1][-]{section.14}{3.2 Extra\347\343o, Transforma\347\343o e Carga}{chapter.10}% 23
-\BOOKMARK [1][-]{section.16}{3.3 Data Warehousing}{chapter.10}% 24
-\BOOKMARK [2][-]{subsection.17}{3.3.1 A organiza\347\343o dos dados}{section.16}% 25
-\BOOKMARK [2][-]{subsection.18}{3.3.2 As arquiteturas do Data Warehouse}{section.16}% 26
-\BOOKMARK [1][-]{section.20}{3.4 Data Ware Housing}{chapter.10}% 27
-\BOOKMARK [2][-]{subsection.21}{3.4.1 Arquiteturas alternativas}{section.20}% 28
-\BOOKMARK [3][-]{section*.22}{Arquitetura Global}{subsection.21}% 29
-\BOOKMARK [3][-]{section*.23}{Arquitetura de Data Mart Independente}{subsection.21}% 30
-\BOOKMARK [3][-]{section*.24}{Arquitetura de Data Marts Integrados}{subsection.21}% 31
-\BOOKMARK [1][-]{section.26}{3.5 Dados}{chapter.10}% 32
-\BOOKMARK [1][-]{section.27}{3.6 Os tipos de dados}{chapter.10}% 33
-\BOOKMARK [2][-]{subsection.29}{3.6.1 Atributos e medidas}{section.27}% 34
-\BOOKMARK [2][-]{subsection.30}{3.6.2 O tipo de um atributo}{section.27}% 35
-\BOOKMARK [2][-]{subsection.31}{3.6.3 Tipos de conjunto de dados}{section.27}% 36
-\BOOKMARK [1][-]{section.34}{3.7 Qualidade dos dados}{chapter.10}% 37
-\BOOKMARK [1][-]{section.35}{3.8 Trabalhando os dados}{chapter.10}% 38
-\BOOKMARK [0][-]{chapter.36}{4 Minera\347\343o de dados}{}% 39
-\BOOKMARK [1][-]{section.37}{4.1 Descoberta de conhecimento em banco de dados}{chapter.36}% 40
-\BOOKMARK [1][-]{section.39}{4.2 Processo de Minera\347\343o de dados}{chapter.36}% 41
-\BOOKMARK [0][-]{chapter.40}{5 Ferramentas de minera\347\343o de dados}{}% 42
-\BOOKMARK [1][-]{section.41}{5.1 IBM SPSS Modeler}{chapter.40}% 43
-\BOOKMARK [1][-]{section.44}{5.2 SAP Sybase IQ}{chapter.40}% 44
-\BOOKMARK [2][-]{subsection.45}{5.2.1 Sybase IQ}{section.44}% 45
-\BOOKMARK [2][-]{subsection.46}{5.2.2 O Sybase Complex Event Processing}{section.44}% 46
-\BOOKMARK [2][-]{subsection.47}{5.2.3 SAP Business Objects}{section.44}% 47
-\BOOKMARK [2][-]{subsection.48}{5.2.4 Sybase Industry Warehouse Studio}{section.44}% 48
-\BOOKMARK [2][-]{subsection.49}{5.2.5 Vantagens espec\355ficas do produto}{section.44}% 49
-\BOOKMARK [2][-]{subsection.51}{5.2.6 Vers\365es dispon\355veis do produto}{section.44}% 50
-\BOOKMARK [2][-]{subsection.52}{5.2.7 Sybase IQ Enterprise Edition}{section.44}% 51
-\BOOKMARK [2][-]{subsection.53}{5.2.8 Sybase IQ Small Business Edition}{section.44}% 52
-\BOOKMARK [2][-]{subsection.54}{5.2.9 Sybase IQ Single Application Server Edition}{section.44}% 53
-\BOOKMARK [1][-]{section.55}{5.3 Oracle Advanced Analytics}{chapter.40}% 54
-\BOOKMARK [1][-]{section.56}{5.4 Weka \(Waikato Environment for Knowledge Analysis\)}{chapter.40}% 55
-\BOOKMARK [2][-]{section*.59}{Abas e fun\347\365es}{section.56}% 56
-\BOOKMARK [0][-]{chapter.76}{6 Principais algor\355timos utilizados na minera\347\343o}{}% 57
-\BOOKMARK [1][-]{section.77}{6.1 Aplicando os Algoritmos}{chapter.76}% 58
-\BOOKMARK [1][-]{section.79}{6.2 Algoritmo de \301rvore de decis\343o}{chapter.76}% 59
-\BOOKMARK [2][-]{subsection.81}{6.2.1 Como o algoritmo funciona}{section.79}% 60
-\BOOKMARK [2][-]{subsection.82}{6.2.2 Prevendo colunas discretas}{section.79}% 61
-\BOOKMARK [2][-]{subsection.85}{6.2.3 Prevendo colunas cont\355nuas}{section.79}% 62
-\BOOKMARK [2][-]{subsection.88}{6.2.4 Dados necess\341rios para modelos de \341rvore de decis\343o}{section.79}% 63
-\BOOKMARK [1][-]{section.89}{6.3 Algoritmo de Clustering}{chapter.76}% 64
-\BOOKMARK [2][-]{subsection.91}{6.3.1 Como o algoritmo funciona}{section.89}% 65
-\BOOKMARK [2][-]{subsection.94}{6.3.2 Dados necess\341rios para modelos de clustering}{section.89}% 66
-\BOOKMARK [1][-]{section.95}{6.4 Algoritmo de Rede Neural}{chapter.76}% 67
-\BOOKMARK [2][-]{subsection.96}{6.4.1 O aprendizado}{section.95}% 68
-\BOOKMARK [2][-]{subsection.97}{6.4.2 Como o algoritmo funciona}{section.95}% 69
-\BOOKMARK [2][-]{subsection.100}{6.4.3 Dados necess\341rios para modelos de rede neural}{section.95}% 70
-\BOOKMARK [1][-]{section.101}{6.5 Algoritmo de Regress\343o Linear}{chapter.76}% 71
-\BOOKMARK [2][-]{subsection.103}{6.5.1 Como o algoritmo funciona}{section.101}% 72
-\BOOKMARK [2][-]{subsection.104}{6.5.2 Dados requeridos para modelos de regress\343o linear}{section.101}% 73
-\BOOKMARK [0][-]{chapter.105}{7 Conclus\343o}{}% 74
-\BOOKMARK [0][-]{chapter.105}{Refer\352ncias Bibliogr\341ficas}{}% 75
+\BOOKMARK [2][-]{section*.14}{Arquitetura de mercado de dados independente}{section.13}% 23
+\BOOKMARK [3][-]{section*.15}{Arquitetura de mercado de dados integrados}{section*.14}% 24
+\BOOKMARK [1][-]{section.16}{3.2 Extra\347\343o, Transforma\347\343o e Carga}{chapter.10}% 25
+\BOOKMARK [1][-]{section.18}{3.3 Tratamento de dados para um armaz\351m de dados}{chapter.10}% 26
+\BOOKMARK [2][-]{subsection.20}{3.3.1 Atributos e medidas}{section.18}% 27
+\BOOKMARK [2][-]{subsection.21}{3.3.2 O tipo de um atributo}{section.18}% 28
+\BOOKMARK [2][-]{subsection.22}{3.3.3 Tipos de conjunto de dados}{section.18}% 29
+\BOOKMARK [0][-]{chapter.25}{4 Minera\347\343o de dados}{}% 30
+\BOOKMARK [1][-]{section.26}{4.1 Descoberta de conhecimento em banco de dados}{chapter.25}% 31
+\BOOKMARK [1][-]{section.28}{4.2 Processo de Minera\347\343o de dados}{chapter.25}% 32
+\BOOKMARK [0][-]{chapter.29}{5 Passos do processo de descoberta em banco de dados}{}% 33
+\BOOKMARK [1][-]{section.38}{5.1 Dado}{chapter.29}% 34
+\BOOKMARK [1][-]{section.39}{5.2 Sele\347\343o}{chapter.29}% 35
+\BOOKMARK [1][-]{section.40}{5.3 Pr\351-processamento}{chapter.29}% 36
+\BOOKMARK [1][-]{section.41}{5.4 Transforma\347\343o}{chapter.29}% 37
+\BOOKMARK [1][-]{section.42}{5.5 Minera\347\343o de dados}{chapter.29}% 38
+\BOOKMARK [1][-]{section.43}{5.6 Interpreta\347\343o e avalia\347\343o}{chapter.29}% 39
+\BOOKMARK [1][-]{section.44}{5.7 Conhecimento}{chapter.29}% 40
+\BOOKMARK [0][-]{chapter.45}{6 Conclus\343o}{}% 41
+\BOOKMARK [0][-]{chapter.45}{Refer\352ncias Bibliogr\341ficas}{}% 42

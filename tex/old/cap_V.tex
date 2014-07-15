@@ -1,25 +1,298 @@
-\chapter{Cronograma}
-\label{cap:cro}
+\chapter{Principais algorítimos utilizados na mineração}
+\label{cap:principaisalgo}
 
+O centro da mineração de dados envolve o uso de algoritmos avançados, que utilizam de técnicas especiais e são as ferramentas de trabalho que se aplica aos dados já preparados para mineração.
 
-\begin{table*}[hp]
+\begin{quotation}
+O algoritmo de mineração de dados é o mecanismo que cria um modelo de mineração de dados. Para criar um modelo, um algoritmo primeiro analisa um conjunto de dados e procura padrões e tendências específicos. O algoritmo usa os resultados dessa análise para definir os parâmetros do modelo de mineração. Esses parâmetros são aplicados pelo conjunto de dados inteiro para extrair padrões acionáveis e estatísticas detalhadas.
+
+O modelo de mineração que um algoritmo cria pode assumir vários formatos, incluindo:
+\begin{itemize}
+	\item Um conjunto de regras que descreve como são agrupados produtos em uma transação.
+	\item Uma árvore de decisão que prevê se um determinado cliente comprará um produto.
+	\item Um modelo matemático que prevê as vendas.
+	\item Um conjunto de \textit{clusters} que descreve como os casos em um conjunto de dados estão relacionados.
+\end{itemize}
+\cite{MICROSOFT}.
+\end{quotation}
+
+\section{Aplicando os Algoritmos}
+
+No contexto de definição e aplicação de algoritmos percebe-se que:
+
+\begin{quotation}
+A definição e uso de um algoritmo para a mineração de dados não é uma tarefa fácil e exige conhecimento avançado das técnicas neles empregadas e dos resultados obtidos através de cada algoritmo, conforme cita a Microsoft.
+
+A escolha do melhor algoritmo para uma tarefa empresarial específica pode ser um desafio. Embora você possa usar algoritmos diferentes para executar a mesma tarefa empresarial, cada algoritmo produz um resultado diferente e alguns podem produzir mais de um tipo de resultado. Por exemplo, você pode usar o algoritmo Árvores de Decisão da Microsoft não apenas para previsão, mas também como uma maneira de reduzir o número de colunas em um conjunto dados uma vez que a árvore de decisão pode identificar colunas que não afetam o modelo de mineração final.
+
+Você também não tem que usar algoritmos independentemente. Em uma solução de mineração de dados, é possível usar alguns algoritmos para explorar dados e, em seguida, usar outros algoritmos para prever um resultado específico com base nesses dados. Por exemplo, você pode usar um algoritmo de \textit{cluster}, que reconhece padrões, para dividir dados em grupos que são mais ou menos homogêneos e, em seguida, usar os resultados para criar um modelo de árvore de decisão melhor. Você pode usar vários algoritmos em uma solução para executar tarefas separadas, por exemplo, usando um algoritmo de árvore de regressão para obter informações de previsão financeira e um algoritmo com base em regras para executar uma melhor análise de cesta básica.
+\cite{MICROSOFT}.
+\end{quotation}
+
+	Sendo assim evidencia-se que o uso de algoritmos de mineração não é um processo fixo ou que possa ser aplicado sem critério conforme afirma Bogorny (2003) A escolha de um método depende do contexto e do domínio da aplicação, bem como, do tipo de conhecimento que se deseja encontrar.
+	
+Os modelos de mineração podem prever valores, produzir resumos de dados e localizar correlações ocultas. Para uma melhor definição a tabela \ref{tab:SugAlgo} fornece sugestões para quais algoritmos devem ser usados para tarefas específicas.
+
+\begin{table}[!h]
 \centering
-\caption{Cronograma dopré-projeto \cite{Mar2004} }
-\label{tab:croTab} 
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Tag & Comprimento & Início &   & Tag & Comprimento & Início \\ 
-\hline 001 & 0020 & 00000 && 100 & 0032 & 00235\\ 
-\hline 003 & 0004 & 00020 && 245 & 0087 & 00267\\ 
-\hline 005 & 0017 & 00024 && 246 & 0036 & 00354\\ 
-\hline 008 & 0041 & 00041 && 250 & 0012 & 00390\\ 
-\hline 010 & 0024 & 00082 && 260 & 0037 & 00402\\ 
-\hline 020 & 0025 & 00106 && 300 & 0029 & 00439\\ 
-\hline 020 & 0044 & 00131 && 500 & 0042 & 00468\\ 
-\hline 040 & 0018 & 00175 && 520 & 0220 & 00510\\ 
-\hline 050 & 0024 & 00193 && 650 & 0033 & 00730\\ 
-\hline 082 & 0018 & 00217 && 650 & 0012 & 00763\\ 
+\caption{Sugestões de algoritmos para mineração por tarefa. Fonte: \cite{MICROSOFT}}
+\label{tab:SugAlgo} 
+\begin{tabular}{|p{7cm}|p{7cm}|}
+\hline \textbf{Tarefa} & \textbf{Indicação de algoritmos a serem usados} \\ 
+\hline \textbf{Prevendo um atributo discreto:}
+Por exemplo, prever se o destinatário da campanha de mala-direta comprará um produto.
+ & Algoritmo Árvores de Decisão Algoritmo de \textit{Clustering} Algoritmo  de Rede Neural\\ 
+\hline \textbf{Prevendo um atributo contínuo:}
+Por exemplo, prever as vendas do próximo ano.
+ & Algoritmo Árvores de Decisão\\ 
+\hline \textbf{Localizando grupos de itens comuns em transações:}
+Por exemplo, usar a análise de cesta básica para sugerir produtos adicionais a um cliente para compra.
+ & Algoritmo de Associação Algoritmo Árvores de Decisão\\ 
+\hline \textbf{Localizando grupos de itens semelhantes.} 
+Por exemplo, segmentar dados demográficos em grupos para entender melhor as relações entre atributos.
+ & Algoritmo de \textit{Clustering}\\ 
+\hline 
+\end{tabular} 
+\end{table}
+
+
+\section{Algoritmo de Árvore de decisão}
+
+O algoritmo de árvore de decisão é um algoritmo de classificação e regressão para uso em modelagens de previsão de atributos discretos e contínuos. No caso dos atributos discretos\footnote{Um atributo discreto significa que a coluna contém um número finito de valores sem continuidade entre eles, códigos de área de telefone são um bom exemplo de dados numéricos discretos \cite{MICROSOFT}.}, o algoritmo faz previsões fundadas nas relações entre colunas de entrada em um conjunto de dados.
+
+Ele usa os valores, conhecidos como estados, dessas colunas para prever os estados de uma coluna que você define como previsível. Especificamente, o algoritmo identifica as colunas de entrada que são correlacionadas com a coluna previsível. Por exemplo, em um cenário em que se deseja prever a tendência dos clientes em adquirir uma bicicleta, se 9 de 10 clientes jovens comprarem uma bicicleta, mas apenas 2 de 10 clientes mais velhos fizerem o mesmo, o algoritmo infere que idade é um bom indicador para a compra de bicicletas. A árvore de decisão faz previsões com base nesta tendência para obter um resultado específico.
+
+No caso de atributos contínuos, o algoritmo usa a regressão linear para determinar onde uma árvore de decisão se divide.
+Se mais de uma coluna for definida como previsível, ou se os dados de entrada tiverem uma tabela aninhada configurada como previsível, o algoritmo criará uma árvore de decisão separada para cada coluna previsível.
+
+\subsection{Como o algoritmo funciona}
+
+\begin{quotation}
+O algoritmo de árvore de Decisão gera um modelo de mineração de dados criando uma série de divisões na árvore. Essas divisões são representadas como nós. O algoritmo adiciona um nó ao modelo toda vez que uma coluna de entrada é considerada significativamente correlacionada a uma coluna previsível.
+\cite{MICROSOFT}.
+\end{quotation}
+
+O algoritmo de árvores de Decisão usa a seleção de recurso para guiar a seleção dos atributos mais úteis. A seleção de recurso é importante para impedir que atributos sem importância usem tempo do processador.
+
+Um problema muito comum nos modelos de mineração de dados é que eles se tornam muito sensíveis a diferenças pequenas nos dados de treinamento. Nesse caso, refere-se a eles como sobrecarregados ou muito treinados.
+
+\subsection{Prevendo colunas discretas}
+
+A forma como o algoritmo de Árvore de Decisão cria uma árvore para uma coluna previsível discreta que pode ser mostrada usando uma imagem. A imagem a seguir mostra um histograma que esboça uma coluna previsível.
+
+Compradores de bicicleta, em comparação com uma coluna de entrada, Idade.
+
+A Figura \ref{fig:exemploFig21} mostra que a idade de uma pessoa ajuda a distinguir se ela comprará uma bicicleta.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig21}
+  \caption{Demonstração de tendência de compra por idade. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig21}
+ \end{figure}
+
+A correlação que é mostrada no diagrama faz com que o algoritmo Árvore de Decisão crie um novo nó no modelo, conforme demonstrado na Figura \ref{fig:exemploFig22}.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig22}
+  \caption{Nó de decisão baseado na tendência por idade. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig22}
+ \end{figure}
+
+À medida que o algoritmo acrescenta novos nós em um modelo, uma estrutura de árvore é formada, com o nó superior da árvore indicando a divisão da coluna previsível para a média da população de clientes. Como o modelo continua crescendo, o algoritmo considera todas as colunas.
+
+\subsection{Prevendo colunas contínuas}
+
+Quando o algoritmo de Árvore de Decisão cria uma árvore com base em uma coluna previsível contínua, cada nó contém uma fórmula de regressão e uma divisão ocorre em um ponto de não-linearidade na fórmula de regressão. 
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig23}
+  \caption{Criação de nós a partir de uma fórmula de regressão. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig23}
+ \end{figure}
+
+O diagrama contém dados que podem ser modelados usando uma única linha ou usando duas linhas conectadas. Porém, uma única linha não representaria os dados de forma satisfatória. Mas, se você usar duas linhas, o modelo terá um desempenho muito melhor ao aproximar dados. O ponto onde duas linhas se encontram é o ponto de não-linearidade e é onde o nó de um modelo de árvore de decisão se dividiria. Por exemplo, o nó que corresponde ao ponto de não-linearidade no gráfico anterior poderia ser representado pelo diagrama a seguir. As duas equações representam as equações de regressão para as duas linhas.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig24}
+  \caption{Fórmula de regressão da árvore de decisão. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig24}
+ \end{figure}
+
+\subsection{Dados necessários para modelos de árvore de decisão}
+
+Ao preparar dados para usar em um modelo de árvore de decisão, deve-se saber os requisitos do algoritmo específico, incluindo a quantidade de dados necessária e como eles são usados.
+Os requisitos para um modelo de árvore de decisão são os seguintes:
+
+\begin{itemize}
+	\item Uma única \textit{key} coluna: Cada modelo deve conter uma coluna numérica ou de texto que identifique unicamente cada registro. Não são permitidas chaves compostas;
+	\item Uma coluna previsível:Requer, pelo menos, uma coluna previsível. Você pode incluir vários atributos previsíveis em um modelo, e o atributo previsível pode ser de diferentes tipos, tanto numérico como discreto. Porém, o aumento no número de atributos previsíveis pode aumentar o tempo de processamento;
+	\item Colunas de entrada: Requer colunas de entrada que podem ser discretas ou contínuas. O aumento no número de atributos de entrada afeta o tempo de processamento.
+\end{itemize}
+
+\section{Algoritmo de \textit{Clustering}}
+
+Este algoritmo usa técnicas iterativas para agrupar casos em um conjunto de dados em \textit{clusters} que contenham características semelhantes. Esses agrupamentos são úteis para explorar dados, identificando anomalias nos dados e criar previsões.
+
+Modelos de \textit{clustering} identificam as relações em um conjunto de dados que não podem ser derivados de forma lógica através de observação casual. Por exemplo, você pode discernir logicamente que pessoas que se vão para o trabalho de bicicleta normalmente não moram longe do local onde trabalham. Porém, o algoritmo pode encontrar outras características dos usuários de bicicleta que não são tão óbvias. Na figura a seguir, o \textit{cluster} “A” representa dados sobre pessoas que pretendem ir de carro para o trabalho, enquanto o \textit{cluster} “B” representa dados sobre pessoas que pretendem ir de bicicleta para o trabalho.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig25}
+  \caption{Demonstração de agrupamento por similaridades. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig25}
+ \end{figure}
+
+O algoritmo de \textit{clustering} difere dos demais algoritmos de mineração de dados, como o algoritmo de Árvore de Decisão, porque você não precisa designar uma coluna previsível para poder criar um modelo de \textit{clustering}. O algoritmo de \textit{clustering} treina o modelo estritamente a partir das relações existentes nos dados e a partir dos clusters que o algoritmo identifica.
+
+\subsection{Como o algoritmo funciona}
+
+\begin{quotation}
+O algoritmo \textit{Clustering} primeiro identifica as relações em um conjunto de dados e gera uma série de \textit{clusters} com base nelas. Uma dispersão é uma maneira útil para representar visualmente como o algoritmo agrupa os dados, conforme mostrado no diagrama a seguir. A dispersão representa todos os caso no conjunto de dados, e cada caso é um ponto no gráfico. Os \textit{clusters} agrupam pontos no gráfico e ilustram as relações que o algoritmo identifica.\cite{MICROSOFT}
+
+Nos algoritmos de \textit{clustering}, que utilizam uma abordagem \textit{bottom-up}, cada elemento do conjunto é, inicialmente, associado a um \textit{cluster} distinto, e novos  \textit{clusters} vão sendo formados pela união dos \textit{clusters} existentes. Esta união ocorre de acordo com alguma medida que forneça a informação sobre quais deles estão mais próximos uns dos outros.
+
+Nos algoritmos de divisão, com uma abordagem \textit{top-down}, inicialmente tem-se um único \textit{cluster} contendo todos os elementos do conjunto e, a cada  passo, são efetuadas divisões, formando novos  \textit{clusters}  de tamanhos menores, conforme critérios pré-estabelecidos.\cite{OCHIDIASSOARES}
+\end{quotation}
+
+O seja o mesmo algoritmo que é utilizado para fazer o agrupamento pode ser utilizando para fazer a divisão dos elementos conforme pode ser constatado na imagem a seguir.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig26}
+  \caption{Sentidos do algoritmo para o agrupamento ou divisão dos elementos. Fonte: \cite{OCHIDIASSOARES}}
+  \label{fig:exemploFig26}
+ \end{figure}
+
+Após definir primeiro os \textit{clusters}, o algoritmo calcula como os mesmos representam satisfatoriamente agrupamentos dos pontos, e em seguida, tenta redefinir os agrupamentos para criar os \textit{clusters} que melhor representem os dados. O algoritmo itera através desse processo até não poder mais melhorar os resultados pela redefinição dos \textit{clusters}.
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig27}
+  \caption{Dispersão de casos em um conjunto de dados. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig27}
+ \end{figure}
+
+É possível personalizar o modo como o algoritmo funciona ao selecionar uma técnica de \textit{clustering} específica, limitando o número máximo de \textit{clusters} ou alterando o valor de suporte necessário para criar um \textit{cluster}. Para obter mais informações, consulte Referência técnica do algoritmo \textit{Clustering}.
+
+\subsection{Dados necessários para modelos de \textit{clustering}}
+
+Segundo \cite{MICROSOFT}, Ao preparar dados para usar no treinamento de um modelo de \textit{clustering}, é preciso entender os requisitos de um determinado algoritmo, incluindo a quantidade de dados necessária e como eles são usados.
+
+Os requisitos de um modelo de \textit{clustering} são os seguintes:
+
+\begin{itemize}
+	\item Uma única \textit{key} coluna: Cada modelo deve conter um numérico ou coluna de texto que exclusivamente identifica cada registro, chaves compostas não são permitidas;
+	\item Colunas de entrada: Cada modelo deve conter pelo menos uma coluna de entrada contendo os valores que serão usados para criar os \textit{clusters}. Você pode ter quantas colunas de entrada desejar, mas, dependendo do número de valores em cada coluna, a inclusão de colunas extras pode aumentar o tempo que leva para treinar o modelo;
+	\item Coluna previsível opcional: O algoritmo não precisa de uma coluna previsível para criar o modelo, mas você pode adicionar uma coluna previsível de praticamente qualquer tipo de dados, os valores da coluna previsível podem ser tratados como entrada para o modelo de \textit{clustering} ou você pode especificar que ela deve ser usada somente para previsão. Por exemplo, para prever a receita de clientes ao agrupá-los por dados demográficos, como região ou idade, você poderia especificar a receita como coluna previsível e adicionar todas as outras colunas, como região e idade, como entradas.
+\end{itemize}
+
+\section{Algoritmo de Rede Neural}
+
+\begin{quotation}
+Redes neurais é um conceito da computação que visa trabalhar no processamento de dados de maneira semelhante ao cérebro humano. O cérebro é tido como um processador altamente complexo e que realiza processamentos de maneira paralela para isso, ele organiza sua estrutura, ou seja, os neurônios, de forma que eles realizem o processamento necessário. 
+Isso é feito numa velocidade extremamente alta e não existe qualquer computador no mundo capaz de realizar o que o cérebro humano faz.
+
+Nas redes neurais artificiais, a ideia é realizar o processamento de informações tendo como princípio a organização de neurônios do cérebro. Como o cérebro humano é capaz de aprender e tomar decisões baseadas na aprendizagem, as redes neurais artificiais devem fazer o mesmo. Assim, uma rede neural pode ser interpretada como um esquema de processamento capaz de armazenar conhecimento baseado em aprendizagem (experiência) e disponibilizar este conhecimento para a aplicação em questão.
+Um modelo de mineração desenvolvido com o algoritmo de Rede Neural pode conter várias redes, dependendo do número de colunas usadas para a previsão de entrada ou usadas apenas para previsão. O número de redes que um modelo de mineração simples contém depende do número de estados que estão contidos nas colunas de entrada e as colunas previsíveis que o modelo de mineração usa.
+
+O algoritmo de Rede Neural é útil para analisar dados de entrada complexos, tais como de um processo de fabricação, de comercialização ou, problemas comerciais para os quais uma quantidade significativa de dados de treinamento está disponível mas, para os quais regras não podem ser facilmente derivadas usando outros algoritmos.
+\cite{MICROSOFT}.
+\end{quotation}
+
+Segundo a \cite{MICROSOFT}, a aplicação deste tipo de algoritmo pode ser feita nas seguintes áreas:
+
+\begin{itemize}
+	\item Análise de promoção e marketing, tais como, medição do sucesso de uma promoção de mala direta ou de uma campanha publicitária radiofônica;
+	\item Prevendo movimento de ações, flutuação de moeda ou demais informações financeiras altamente fluidas a partir de dados históricos;
+	\item Analisando processos industriais e de fabricação;
+	\item Mineração de texto;
+	\item Qualquer modelo de previsão que analisa relações complexas entre muitas entradas e, relativamente, menos saídas.
+\end{itemize}
+
+\subsection{O aprendizado}
+O processo de aprendizagem das redes neurais é realizado quando ocorrem várias modificações significantes nas sinapses dos neurônios. Essas mudanças ocorrem de acordo com a ativação dos neurônios. Se determinadas conexões são mais usadas, estas são reforçadas enquanto que as demais são enfraquecidas. É por isso que quando uma rede neural artificial é implantada para uma determinada aplicação, é necessário um tempo para que esta seja treinada.
+
+Existem, basicamente, três tipos de aprendizado nas redes neurais artificiais:
+
+\begin{itemize}
+	\item Supervisionado: neste tipo, a rede neural recebe um conjunto de entradas padronizadas e seus correspondentes padrões de saída, onde ocorrem ajustes nos pesos sinápticos até que o erro entre os padrões de saída gerados pela rede tenha um valor desejado;
+	\item Não-supervisionado: neste tipo, a rede neural trabalha os dados de forma a determinar algumas propriedades dos conjunto de dados. A partir destas propriedades é que o aprendizado é constituído;
+	\item Híbrido: neste tipo ocorre uma "mistura" dos tipos supervisionado e não-supervisionado. Assim, uma camada pode trabalhar com um tipo enquanto outra camada trabalha com o outro tipo.
+\end{itemize}
+
+\subsection{Como o algoritmo funciona}
+
+As redes neurais artificiais são criadas a partir de algoritmos projetados para uma determinada finalidade. É impossível criar um algoritmo desse sem ter conhecimento de modelos matemáticos que simulem o processo de aprendizado do cérebro humano. Por este ser um artigo de introdução a este assunto, abordaremos uma explicação conceitual eliminando ao máximo os princípios matemáticos naturalmente relacionados.
+
+Basicamente, uma rede neural se assemelha ao cérebro em dois pontos: o conhecimento é obtido através de etapas de aprendizagem e pesos sinápticos são usados para armazenar o conhecimento. Uma sinapse é o nome dado à conexão existente entre neurônios. Nas conexões são atribuídos valores, que são chamados de pesos sinápticos. Isso deixa claro que as redes neurais artificiais têm em sua constituição uma série de neurônios artificiais (ou virtuais) que serão conectados entre si, formando uma rede de elementos de processamento.
+
+Tendo uma rede neural montada, uma série de valores podem ser aplicados sobre um neurônio, sendo que este está conectado a outros pela rede. Estes valores (ou entradas) são multiplicados no neurônio pelo valor do peso de sua sinapse. Então, esses valores são somados. Se esta soma ultrapassar um valor limite estabelecido, um sinal é propagado pela saída (axônio) deste neurônio. Em seguida, essa mesma etapa se realiza com os demais neurônios da rede. Isso quer dizer que os neurônios vão enfrentar algum tipo de ativação, dependendo das entradas e dos pesos sinápticos.
+O algoritmo de Rede Neural cria uma rede que é composta por até três camadas de neurônios. Essas camadas são uma camada de entrada, uma camada opcional oculta e uma camada de saída.
+
+\begin{table*}[!h]
+\centering
+\caption{Camadas de uma rede neural. Fonte: \cite{MICROSOFT}}
+\label{tab:CamadasRede} 
+\begin{tabular}{|c|p{7cm}|}
+\hline \textbf{Camada} & \textbf{Padrão de funcionamento} \\ 
+\hline \textbf{Entrada} & Os neurônios de entrada definem todos os valores de atributo de entrada do modelo de mineração de dados e suas probabilidades.\\ 
+\hline \textbf{Oculta} & Os neurônios ocultos recebem entradas de neurônios de entrada e fornecem resultados para os neurônios de saída. A camada oculta é onde as várias probabilidades de entradas são ponderadas. Uma ponderação descreve a relevância ou importância de uma entrada específica para o neurônio oculto. Quanto maior a ponderação atribuída a uma entrada, mais importante será o valor daquela entrada. As ponderações podem ser negativas, o que significa que a entrada pode inibir, em vez de favorecer, um resultado específico.\\ 
+\hline \textbf{Saída} & Os neurônios de saída representam valores de atributos previsíveis para o modelo de mineração de dados.\\ 
 \hline 
 \end{tabular} 
 \end{table*}
 
-Além do material adquirido serãoutilizados livros da biblioteca e livros em formato digital obtido através da internet.
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig28}
+  \caption{Representação de uma rede neural.Fonte: Laboratório Nacional de Computação Científica (Disponível em: http://www.lncc.br/~labinfo/tutorialRN/)}
+  \label{fig:exemploFig28}
+ \end{figure}
+
+\subsection{Dados necessários para modelos de rede neural}
+
+Um modelo de rede neural deve conter uma coluna-chave, uma ou mais colunas de entrada e uma ou mais colunas previsíveis.
+
+Os modelos de mineração de dados que usam o algoritmo Rede Neural da Microsoft são amplamente influenciados pelos valores especificados para os parâmetros disponíveis para o algoritmo. Esses parâmetros definem como os dados são amostrados, são distribuídos ou estimados para serem distribuídos em cada coluna e quando a seleção de recurso é chamada para limitar os valores usados no modelo final.
+
+\section{Algoritmo de Regressão Linear}
+
+\begin{quotation}
+O algoritmo de Regressão Linear é uma variação do algoritmo de Árvores de Decisão que o ajuda a calcular uma relação linear entre uma variável dependente e uma independente e, depois, a usar aquela relação para previsão. A relação assume a forma de uma equação para uma linha que melhor represente uma série de dados. Por exemplo, a linha na figura a seguir é a melhor representação linear possível dos dados.
+\cite{MICROSOFT}.
+\end{quotation}
+
+ \begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.80\textwidth]{./fig/fig29}
+  \caption{Representação de uma série de dados linear. Fonte: \cite{MICROSOFT}}
+  \label{fig:exemploFig29}
+ \end{figure}
+
+Cada ponto de dados no diagrama tem um erro associado à sua distância da linha de regressão. Os coeficientes a e b na equação de regressão ajustam o ângulo e o local da linha de regressão. É possível obter a equação de regressão ajustando a e b até que a soma dos erros associados a todos os pontos atinja o menor número.
+
+Há outros tipos de regressão que usam diversas variáveis e também métodos não lineares de regressão. Porém, uma regressão linear é um método útil e conhecido para modelar uma resposta a uma alteração em alguns fatores subjacentes.
+
+Exemplo:
+
+É possível usar a regressão linear para determinar uma relação entre duas colunas contínuas. Por exemplo, você pode usar a regressão linear para computar uma linha de tendência de dados de fabricação ou de vendas. É possível também usar a regressão linear como um precursor para o desenvolvimento de modelos de mineração de dados mais complexos para avaliar relações entre colunas de dados.
+
+Apesar de haver muitas maneiras para se computar regressão linear sem a necessidade de ferramentas de mineração de dados, a vantagem de usar o algoritmo de Regressão Linear para esta tarefa é que todas as relações possíveis entre as variáveis são automaticamente computadas e testadas, não sendo necessário selecionar um método de computação, como resolver para mínimos quadrados. Porém, a regressão linear pode simplificar muito as relações em cenários onde diversos fatores afetam o resultado.
+
+\subsection{Como o algoritmo funciona}
+
+O algoritmo de Regressão Linear é uma variação do algoritmo de Árvores de Decisão. Além disso, em um modelo de regressão linear, todo o conjunto de dados é usado para computar relações na passagem inicial, enquanto que um modelo de árvores de decisão divide os dados repetidamente em subconjuntos ou árvores menores.
+
+\subsection{Dados requeridos para modelos de regressão linear}
+
+Ao preparar dados para usar em um modelo de regressão linear, você deve entender os requisitos para o algoritmo específico. Isso inclui a quantidade de dados necessária e a forma como os dados são usados. Os requisitos para este tipo de modelos são os seguintes:
+
+\begin{itemize}
+	\item Uma única \textit{key}: coluna Cada modelo deve conter uma coluna numérica ou de texto que identifique unicamente cada registro. Não são permitidas chaves compostas;
+	\item Uma coluna previsível: Requer, pelo menos, uma coluna previsível. Você pode incluir diversos atributos previsíveis em um modelo, mas eles devem ser tipos de dados numéricos contínuos. Não é possível usar um tipo de dados \textit{datetime} como um atributo previsível, mesmo que o armazenamento nativo dos dados seja numérico;
+	\item Colunas de entrada: Colunas de entrada devem conter dados numéricos contínuos e devem ser atribuídas ao tipo de dados apropriado.
+\end{itemize}

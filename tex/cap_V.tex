@@ -1,15 +1,12 @@
 \chapter{Passos do processo de descoberta em banco de dados}
 \label{cap:passos}
-
 O processo de minerção de dados é divido basicamente em sete passos, em uma ponta temos a entrada de dados e na outra, a saída, temos o conhecimento. 
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.80\textwidth]{./fig/fig7}
 	\caption{Fluxo de funcionamento do processo de descoberta do conhecimento.\cite{Morellato}}
 	\label{fig:exemploFig7}
 \end{figure}
-
 \begin{multicols}{2}
 	\begin{enumerate}
 		\item Dados
@@ -21,40 +18,36 @@ O processo de minerção de dados é divido basicamente em sete passos, em uma pont
 		\item Conhecimento
 	\end{enumerate}
 \end{multicols}
-
 Esses passos não são lineares, é um processo adaptativo. É muito importante o trabalho de base: Seleção, pré-processameto, e transformação antes de entrarmos nos algoritmos propriamente dito na mineração de dados. A maioria dos algoritmos, dependo do volume de dados que será trabalhado, geralmente e quase sempre, a unidade de medida de tempo é dada em dias devido a grande quantidade de dados a serem analisados, dificilmente se trabalhara com uma unidade de tempo menor do que dias. Isso destaca mais ainda a importância dos passos anteriores ao da mineração de dados em si. Em todas essas atividades é importante lembrar que em cada uma delas não existe apenas um algoritmo que resolve o problema, vc tem um conjunto de algoritmos, e as vezes em uma determinada  aplicação um algoritmo é melhor que outro dentro de uma mesma atividade.
-
 \section{Dado}
 Dado é valor bruto, como visto no capítulo \ref{cap:bi} seção \ref{bidado}, são a matéria-prima do processo de descoberta do conhecimento.
 \section{Seleção}
-Como o próprio nome diz Selecionar dados que serão analisados, algumas perguntas devem ser feitas para se saber quais dados serão selecionados e o que deve ser encontrado nesses dados. 
-Ele pega informações de diversas fontes, arquivos texto, planilhas eletrônicas etc. e os concentra em uma única base.
-Como resultado: Dados selecionados.
+Tudo inicia com um dado, geralmente armazenado em um banco de dados, uma planílhas eletrônicas etc. Muitas vezes dados não estruturados, independente da fonte, do formato e de como estejam estruturados. A fase de seleção pega informações de diversas fontes e os concentra em uma única base. Como o próprio nome diz Selecionar dados que serão analisados, algumas perguntas devem ser feitas para se saber quais dados serão selecionados e o que deve ser encontrado nesses dados. Como resultado obtemos os dados selecionados.
 \section{Pré-processamento}
-Nada mais é do que reduzir o tamanho do banco de dados. Exitem diversos dados que não são necessários para a mineração. É importante que antes do inicio do processo seja estabelecido qual o objeto da mineração. Que esteja dentro de um contexto, ter uma visão geral do que se quer encontrar.
-O processo de mineração responde a uma série de perguntas pré estabelecidas. E como temos um contexto, nessa fase se eliminam os dados que não estão dentro do contexto estabelecido. 
-Os algoritmos de mineração geralmente são muito demorados, se temos informações que não atendem ao contexto, o processo será mais lento e o desempenho será muito baixo. 
-Como resultado temos os dados processados.
+Nada mais é do que reduzir o tamanho do banco de dados. Exitem diversos dados que não são necessários para a mineração. É importante que antes do inicio do processo seja estabelecido qual o objetivo da mineração, que esteja dentro de um contexto, ter uma visão geral do que se quer encontrar. O processo de mineração responde a uma série de perguntas pré-estabelecidas. E como temos um contexto, nessa fase se eliminam os dados que não estão dentro do contexto estabelecido. Os algoritmos de mineração geralmente são muito demorados, se temos informações que não atendem ao contexto, o processo será mais lento e o desempenho será muito baixo. Como entrada temos os dados selecionados e como resultado obtemos os dados processados.
 \section{Transformação}
-Nesse passo podemos usar vários tipos de algoritmos, cada tipo tem um formato de dado de entrada. Nesse passo serão transformados os dados para o algoritmo específico que será utilizado no próximo passo.  (Você transformar um quadrado em um cubo pq futuramente iremos precisar de um cubo por exemplo )
-É um dos passos mais complexos no processo pq muitas vezes fazemos todos os passos apresentados até o momento, e descobrimos no momento de executar o passo de DM que alguma coisa ficou errada lá pra trás, é onde falta o ponto e virgula da programação na hora da compilação. Dependendo do caso, é necessário voltar no incio e restartar o processo com a nova informação.
-Como resultado temos os dados transformados e preparados para a aplicação dos algoritmos de mineração.
-
+Nesse passo podemos usar vários tipos de algoritmos para transformação dos dados, cada algoritmo tem um formato de dado de entrada, então, nesse passo, os dados devem ser preparados para o algoritmo específico que será utilizado passo de mineração de dados. Pode ser considerado um dos passos mais complexos dentro de todo o processo, é necessário que se tenha conhecimento prévio dos algorítmos que serão utilizados na mineração de dados para dar prosseguimento nos passos, a transformação dos dados deve ser feita em função do algorítmo que será utilizado no próximo passo. Como entrada temos dados processados e como resultado obtemos os dados transformados e preparados para a aplicação dos algoritmos de mineração.
 \section{Mineração de dados}
-Após sair com os dados processados e transformados, aplicamos os algoritmos para a extração do conhecimento. 
-Exitem diversos algoritmos que podem ser aplicados. A escolha do algoritmo é em função de "perguntas" que devem ser formuladas na seleção dos dados, qual o objetivo desse data mine? Qual a pergunta que ele deverá responder? 
-Basicamente as perguntas, que eles chamam de atividades de data mine, podem ser de dois tipos: Atividade Preditivas e Atividades descritivas.
-Como dizem, nessa fase é onde o show acontece.
-Atividades preditivas:
-Você tem basicamente dois tipos de algoritmos: Classificação e regressão.
-Classificação: são diversas categorias pré estabelecidas, vc tem um novo item e quer prever em qual categoria esse novo item se encaixa.
-Regressão: Quando vc quer prever uma variável numérica. Ex. vc quer prever que nota determinada pessoa daria a um filme baseando nos votos anteriores dela.
-Atividades descritivas São basicamente três tipos:
-Regras de associação: Descrevem se exitem alguma dependência entre as variáveis, associação entre dois itens
-Sumarização: que descreve um conjunto de dados
-Clusterização: divide o universo de itens em clusters, em grupos, colocar cada coisa em seu devido lugar.
+Após sair com os dados processados e transformados, aplicamos os algoritmos para a extração do conhecimento. Exitem diversos algoritmos que podem ser aplicados, a escolha do algoritmo é em função de "perguntas" que devem ser formuladas na seleção dos dados, qual o objetivo desse data mine? Qual a pergunta que ele deverá responder? Basicamente as perguntas, chamamadas de atividades de data mine, podem ser de dois tipos: \textbf{atividade preditivas} e \textbf{atividades descritivas}.
+\subsection{Atividades preditivas}
+\begin{flushleft}
+Predição baseada em histórico, dados em algo real. Preditivo ciêntifico que pode ser confirmado com valores, estatística, erro associado etc. Basicamente dois tipos de algoritmos.
+\end{flushleft}
+\subsubsection{Classificação}
+São diversas categorias pré estabelecidas, onde temos um novo item e necessitamos prever em qual categoria esse novo item se encaixa. Ex.: Um banco que fornece empréstimos sabe quais clientes pagam seus empréstimos em dia e os que não pagam, isso em função de uma série de informações associada a esse cliente como emprego, salário, histórico familiar etc. Com base nessas informações, a mineração de dados de classificação pode auxiliar o banco a tomar a decisão de que deve ou não fornecer um empréstimo para o novo cliente.
+\subsubsection{Regressão}
+Regressão é uma atividade de predição quando temos a necessidade de prever uma variável numérica. Ex.: prever que nota determinada pessoa daria a um filme baseando-se nos votos anteriores dessa pessoa.
+\subsection{Atividades descritivas}
+\begin{flushleft}
+Basicamente três tipos de algoritmos.
+\end{flushleft}
+\subsubsection{Regras de associação}
+Descrevem se exitem alguma dependência entre duas variáveis, ou seja, uma associação entre dois itens. Ex.: Será que um cliente que compra o produto A compra também o produto B?
+\subsubsection{Sumarização}
+Sua função é descrever um conjunto de dados. O algoritmo usa uma série de técnicas de estatística descritiva para fazer uma análise exploratória dos dados. De certa forma, junta dados separados e analisa a combinação do que estava separado em conjunto. 
+\subsubsection{Clusterização}
+Divide o universo de itens em clusters, em grupos, colocar cada coisa em seu devido lugar, busca predizer a que grupo determinado item pertence.
 \section{Interpretação e avaliação}
-Normalmente nessa etapa, a TI trabalha associado a especialistas da área de aplicação do negócio.
-pode ser a melhor ou a pior etapa do processo. Nessa fase é que entregamos o produto aos patrocinadores, nela são vistos os padrões e resultados da mineração.
-
+Normalmente nessa etapa, a equipe de TI trabalha associado a especialistas da área de aplicação do negócio, esses especialistas devem saber a onde aplicar o padrão extraído da base de dados e dizer se o padrão é válido ou não. Pode ser a melhor ou a pior etapa do processo, é nessa etapa que o produto será entregue aos patrocinadores, nela são vistos os padrões e resultados da mineração.
 \section{Conhecimento}
+O conhecimento é a ação de conseguir entender por meio da inteligência, da razão ou da experiência como visto no capítulo \ref{cap:bi} seção \ref{biconhecimento}. Nessa etapa o processo de descoberta do conhecimento é finalizado.

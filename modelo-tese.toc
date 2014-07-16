@@ -1,33 +1,40 @@
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{9}{Doc-Start}
-\contentsline {chapter}{Lista de Tabelas}{10}{Doc-Start}
-\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{11}{chapter.1}
-\contentsline {chapter}{\numberline {2}Intelig\^encia de neg\'ocio}{13}{chapter.2}
-\contentsline {subsection}{\numberline {2.0.1}Hist\'orico}{13}{subsection.3}
-\contentsline {section}{\numberline {2.1}Dado, informa\c c\~ao, conhecimento e decis\~ao}{14}{section.5}
-\contentsline {subsection}{\numberline {2.1.1}Dado}{14}{subsection.7}
-\contentsline {subsection}{\numberline {2.1.2}Informa\c c\~ao}{15}{subsection.8}
-\contentsline {subsection}{\numberline {2.1.3}Conhecimento}{15}{subsection.9}
-\contentsline {chapter}{\numberline {3}Armaz\'em de dados}{16}{chapter.10}
-\contentsline {section}{\numberline {3.1}\textit {Mercado de dados}}{18}{section.13}
-\contentsline {subsubsection}{Arquitetura de mercado de dados independente}{18}{section*.14}
-\contentsline {subsubsection}{Arquitetura de mercado de dados integrados}{18}{section*.15}
-\contentsline {section}{\numberline {3.2}Extra\c c\~ao, Transforma\c c\~ao e Carga}{19}{section.16}
-\contentsline {section}{\numberline {3.3}Tratamento de dados para um armaz\'em de dados}{20}{section.18}
-\contentsline {subsection}{\numberline {3.3.1}Atributos e medidas}{22}{subsection.20}
-\contentsline {subsection}{\numberline {3.3.2}O tipo de um atributo}{23}{subsection.21}
-\contentsline {subsection}{\numberline {3.3.3}Tipos de conjunto de dados}{23}{subsection.22}
-\contentsline {chapter}{\numberline {4}Minera\c c\~ao de dados}{25}{chapter.25}
-\contentsline {section}{\numberline {4.1}Descoberta de conhecimento em banco de dados}{25}{section.26}
-\contentsline {section}{\numberline {4.2}Processo de Minera\c c\~ao de dados}{26}{section.28}
-\contentsline {chapter}{\numberline {5}Passos do processo de descoberta em banco de dados}{28}{chapter.29}
-\contentsline {section}{\numberline {5.1}Dado}{29}{section.38}
-\contentsline {section}{\numberline {5.2}Sele\c c\~ao}{29}{section.39}
-\contentsline {section}{\numberline {5.3}Pr\'e-processamento}{29}{section.40}
-\contentsline {section}{\numberline {5.4}Transforma\c c\~ao}{29}{section.41}
-\contentsline {section}{\numberline {5.5}Minera\c c\~ao de dados}{30}{section.42}
-\contentsline {section}{\numberline {5.6}Interpreta\c c\~ao e avalia\c c\~ao}{30}{section.43}
-\contentsline {section}{\numberline {5.7}Conhecimento}{30}{section.44}
-\contentsline {chapter}{\numberline {6}Conclus\~ao}{31}{chapter.45}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{32}{chapter.45}
+\contentsline {chapter}{Lista de Figuras}{10}{Doc-Start}
+\contentsline {chapter}{Lista de Tabelas}{11}{Doc-Start}
+\contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{12}{chapter.1}
+\contentsline {chapter}{\numberline {2}Intelig\^encia de neg\'ocio}{14}{chapter.2}
+\contentsline {subsection}{\numberline {2.0.1}Hist\'orico}{14}{subsection.3}
+\contentsline {section}{\numberline {2.1}Dado, informa\c c\~ao, conhecimento e decis\~ao}{15}{section.5}
+\contentsline {subsection}{\numberline {2.1.1}Dado}{15}{subsection.7}
+\contentsline {subsection}{\numberline {2.1.2}Informa\c c\~ao}{16}{subsection.8}
+\contentsline {subsection}{\numberline {2.1.3}Conhecimento}{16}{subsection.9}
+\contentsline {chapter}{\numberline {3}Armaz\'em de dados}{17}{chapter.10}
+\contentsline {section}{\numberline {3.1}\textit {Mercado de dados}}{19}{section.13}
+\contentsline {subsubsection}{Arquitetura de mercado de dados independente}{19}{section*.14}
+\contentsline {subsubsection}{Arquitetura de mercado de dados integrados}{19}{section*.15}
+\contentsline {section}{\numberline {3.2}Extra\c c\~ao, Transforma\c c\~ao e Carga}{20}{section.16}
+\contentsline {section}{\numberline {3.3}Tratamento de dados para um armaz\'em de dados}{21}{section.18}
+\contentsline {subsection}{\numberline {3.3.1}Atributos e medidas}{23}{subsection.20}
+\contentsline {subsection}{\numberline {3.3.2}O tipo de um atributo}{24}{subsection.21}
+\contentsline {subsection}{\numberline {3.3.3}Tipos de conjunto de dados}{24}{subsection.22}
+\contentsline {chapter}{\numberline {4}Minera\c c\~ao de dados}{26}{chapter.25}
+\contentsline {section}{\numberline {4.1}Descoberta de conhecimento em banco de dados}{26}{section.26}
+\contentsline {section}{\numberline {4.2}Processo de Minera\c c\~ao de dados}{27}{section.28}
+\contentsline {chapter}{\numberline {5}Passos do processo de descoberta em banco de dados}{29}{chapter.29}
+\contentsline {section}{\numberline {5.1}Dado}{30}{section.38}
+\contentsline {section}{\numberline {5.2}Sele\c c\~ao}{30}{section.39}
+\contentsline {section}{\numberline {5.3}Pr\'e-processamento}{30}{section.40}
+\contentsline {section}{\numberline {5.4}Transforma\c c\~ao}{30}{section.41}
+\contentsline {section}{\numberline {5.5}Minera\c c\~ao de dados}{31}{section.42}
+\contentsline {subsection}{\numberline {5.5.1}Atividades preditivas}{31}{subsection.43}
+\contentsline {subsubsection}{Classifica\c c\~ao}{31}{section*.44}
+\contentsline {subsubsection}{Regress\~ao}{31}{section*.45}
+\contentsline {subsection}{\numberline {5.5.2}Atividades descritivas}{32}{subsection.46}
+\contentsline {subsubsection}{Regras de associa\c c\~ao}{32}{section*.47}
+\contentsline {subsubsection}{Sumariza\c c\~ao}{32}{section*.48}
+\contentsline {subsubsection}{Clusteriza\c c\~ao}{32}{section*.49}
+\contentsline {section}{\numberline {5.6}Interpreta\c c\~ao e avalia\c c\~ao}{32}{section.50}
+\contentsline {section}{\numberline {5.7}Conhecimento}{32}{section.51}
+\contentsline {chapter}{\numberline {6}Conclus\~ao}{33}{chapter.52}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{34}{chapter.52}
 \contentsfinish 

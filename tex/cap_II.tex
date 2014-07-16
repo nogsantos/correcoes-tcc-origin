@@ -1,55 +1,38 @@
 \chapter{Inteligência de negócio}
 \label{cap:bi}
-
 \begin{quotation}
 "Apresentar formas de se trabalhar os dados de forma a obter o melhor resultado dos mesmos, através de técnicas de mineração de dados é necessário estudar antes de tudo a aplicação mais ampla das informações. Ou seja, o processo de inteligência de negócio baseia-se na transformação de dados em informações, depois em decisões e finalmente em ações." \cite[Efrain Turban]{TURBANARONSONKINGSHARDA}.
 \end{quotation}
-
 \subsection{Histórico}
-
 O termo inteligência de negócio, em inglês \textit{business intelligence} sigla \textit{BI}, foi criado pela empresa Gartner na década de 80, entretanto sua aplicação já existia há alguns séculos, por exemplo, a sociedade do Egito antigo que observava as cheias do rio Nilo e a utilizavam como referência para determinar ações que deveriam efetuadas.
-
 \begin{quotation}
 A sociedade do Oriente Médio antigo utilizava os princípios básicos de inteligência de negôcio quando cruzavam informações obtidas junto à natureza em beneficio de suas aldeias. Analisar o comportamento das marés, os períodos chuvosos e de seca, a posição dos astros, entre outras, eram formas de obter informações que seriam utilizadas para tomar decisões importantes, permitindo a melhoria de vida de suas respectivas comunidades\cite{PRIMAK}. 
 \end{quotation}
-
 Como exemplo é possível citar a sociedade do Egito antigo que observava as cheias do rio Nilo, e a utilizavam como referência para determinar ações que deveriam efetuadas.
-
 Segundo o departamento de hidráulica e saneamento da universidade federal da Bahia esta observação dos ciclos que ocorriam com o rio e o mapeamento de suas variações, juntamente com seus períodos de ocorrência, proporcionou se definir as melhores épocas para plantio e até mesmo a criação de um “nilômetro” que era uma escala acompanhada exclusivamente pelos sacerdotes para a leitura do nível do rio Nilo, as variações do nível do rio nesta escala determinavam inclusive qual taxa de imposto a ser cobrada.
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.80\textwidth]{./fig/fig1}
 	\caption{Variações do nível das águas do rio Nilo. fonte:\cite{panazzo}}
 	\label{fig:exemploFig}
 \end{figure}
-
-
 \section{Dado, informação, conhecimento e decisão}
-
 A inteligência de negócio aborda como será a tomada de decisão e o embasamento que será utilizado para tal, isso é feito baseado em informações que são extraídas de dados existentes na corporação. Assim, faz-se necessário definir o que é dado, informação, conhecimento e o foco principal que é a decisão.
-
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.80\textwidth]{./fig/fig2}
 	\caption{Representação da relação entre dado, informação, conhecimento e decisão. fonte:\cite{PRIMAK}}
 	\label{fig:exemploFig2}
 \end{figure}
-
 \subsection{Dado}
 \label{bidado}
 Dado é o valor bruto sem contexto; seria o que se armazena propriamente no banco de dados.
-
 \textbf{Analogia:} Se dissermos para um grupo de pessoas: Imaginem o dado como sendo apenas o número 2, algumas pessoas desse grupo podem perguntar, mas 2 o quê? Não há nada mais para se complementar é só um dado sem um contexto.
-
 \subsection{Informação}
 Informação é a contextualização de um valor bruto, ou seja, é o resultado do tratamento do dado, comparado, classificado ou relacionado a outros dados.
-
 \textbf{Analogia:} O 2 é apenas um número, quando colocamos: "A equipe de basquete da cidade fez apenas 2 pontos na partida". Com essa informação as pessoas já conseguem entender melhor sobre do que se trata o assunto, estamos acrescentando algo a mais nos dados, ele não é apenas um valor seja numérico, caracteres alfa numéricos ou datas e assim, pulamos do nível de dado para o nível de informação.
-
 \subsection{Conhecimento}
+\label{biconhecimento}
 Conhecimento é quando se aplica a informação recebida em algum contexto e através da contextualização dessa informação, obtemos o conhecimento e com o conhecimento gerado através das informações, temos o auxílio na tomada de decisões.
-
 \textbf{Analogia:} Se a equipe de basquete da cidade fez apenas 2 pontos isso significa que eles não foram tão eficientes na partida, ou seja, nós tínhamos apenas o número 2, que se trata de um dado, depois obtivemos a informação de que a equipe de basquete fez apenas 2 pontos na partida, a informação foi gerada e agora, se vamos discutir o desempenho da equipe no jogo, essa informação passa a ser conhecimento, afinal de contas, aplicamos a informação dentro de um contexto. Dessa forma podemos tirar como conhecimento que a equipe não foi bem pois não jogaram em sua melhor forma física ou a equipe adversária foi totalmente superior a nossa equipe, podemos extrair também que a equipe fez apenas 1 cesta na partida que resultou em 2 pontos.
-
 Estes três itens são a base para atingir o principal deles: A tomada de decisão. É justamente neste ponto que a correta análise dos dados pode ser o diferencial para se ter uma informação de qualidade, fidedigna e integra.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.7)  15 JUL 2014 15:48
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.7)  16 JUL 2014 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -725,27 +725,27 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 9.85492pt on input line 12.
-)
-\tf@toc=\write5
-\openout5 = `modelo-tese.toc'.
-
  [8
 
 
 
-] (./modelo-tese.lof)
+])
+\tf@toc=\write5
+\openout5 = `modelo-tese.toc'.
+
+ [9]
+(./modelo-tese.lof)
 \tf@lof=\write6
 \openout6 = `modelo-tese.lof'.
 
-
-[9
+ [10
 
 
 ] (./modelo-tese.lot)
 \tf@lot=\write7
 \openout7 = `modelo-tese.lot'.
 
- [10
+ [11
 
 
 ] (./tex/cap_I.tex
@@ -758,40 +758,40 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 18.66588pt on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-[11
+[12
 
 
-]) (./tex/cap_II.tex [12]
+]) (./tex/cap_II.tex [13]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 8.
+(hyperref)                than one, level fixed on input line 6.
 
-<./fig/fig1.jpg, id=307, 952.55875pt x 265.99374pt>
+<./fig/fig1.jpg, id=347, 952.55875pt x 265.99374pt>
 File: ./fig/fig1.jpg Graphic file (type jpg)
  <use ./fig/fig1.jpg>
-Package pdftex.def Info: ./fig/fig1.jpg used on input line 22.
+Package pdftex.def Info: ./fig/fig1.jpg used on input line 15.
 (pdftex.def)             Requested size: 341.43436pt x 95.34367pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 23.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 16.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13
-
-] <./fig/fig2.jpg, id=316, 642.4pt x 401.5pt>
+<./fig/fig2.jpg, id=350, 642.4pt x 401.5pt>
 File: ./fig/fig2.jpg Graphic file (type jpg)
  <use ./fig/fig2.jpg>
-Package pdftex.def Info: ./fig/fig2.jpg used on input line 34.
+Package pdftex.def Info: ./fig/fig2.jpg used on input line 23.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [14 <./fig/fig1.jpg> <./fig/fig2.jpg>]) (./tex/cap_II-I.tex [15]
+ [14
+
+] [15 <./fig/fig1.jpg> <./fig/fig2.jpg>]) (./tex/cap_II-I.tex [16]
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 17.
-[16
+[17
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
@@ -802,7 +802,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
- [17]
+ [18]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 62.
 
@@ -810,7 +810,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17.28> not available
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 66.
 
-[18] <./fig/fig6.jpg, id=349, 854.24763pt x 604.14471pt>
+[19] <./fig/fig6.jpg, id=388, 854.24763pt x 604.14471pt>
 File: ./fig/fig6.jpg Graphic file (type jpg)
  <use ./fig/fig6.jpg>
 Package pdftex.def Info: ./fig/fig6.jpg used on input line 96.
@@ -819,43 +819,43 @@ Package pdftex.def Info: ./fig/fig6.jpg used on input line 96.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
+[20]
 Underfull \hbox (badness 1122) in paragraph at lines 119--121
 []\T1/ptm/b/n/12 Seleção de atri-bu-tos \T1/ptm/m/n/12 A se-le-ção de atri-bu-t
 os é uma etapa da fase de pré-
  []
 
-[20 <./fig/fig6.jpg>] [21] [22] [23]
+[21 <./fig/fig6.jpg>] [22] [23] [24]
 Overfull \hbox (38.94872pt too wide) in paragraph at lines 195--209
  [][] 
  []
 
-) (./tex/cap_III.tex [24]
+) (./tex/cap_III.tex [25]
 Cap\'{\i }tulo 4.
-<./fig/fig8.jpg, id=388, 642.4pt x 401.5pt>
+<./fig/fig8.jpg, id=427, 642.4pt x 401.5pt>
 File: ./fig/fig8.jpg Graphic file (type jpg)
  <use ./fig/fig8.jpg>
 Package pdftex.def Info: ./fig/fig8.jpg used on input line 12.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [25
+ [26
 
- <./fig/fig8.jpg>] [26]) (./tex/cap_V.tex [27]
+ <./fig/fig8.jpg>] [27]) (./tex/cap_V.tex [28]
 Cap\'{\i }tulo 5.
-<./fig/fig7.jpg, id=402, 642.4pt x 401.5pt>
+<./fig/fig7.jpg, id=443, 642.4pt x 401.5pt>
 File: ./fig/fig7.jpg Graphic file (type jpg)
  <use ./fig/fig7.jpg>
-Package pdftex.def Info: ./fig/fig7.jpg used on input line 8.
+Package pdftex.def Info: ./fig/fig7.jpg used on input line 6.
 (pdftex.def)             Requested size: 341.43436pt x 213.40048pt.
- [28
+ [29
 
- <./fig/fig7.jpg>] [29]) (./tex/conclusao.tex [30]
+ <./fig/fig7.jpg>] [30] [31]) (./tex/conclusao.tex [32]
 Cap\'{\i }tulo 6.
-) [31
+) [33
 
 ] (./modelo-tese.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 10.79993pt on input line 4.
- [32
+ [34
 
 
 ]
@@ -863,7 +863,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 10.79993pt on input line 90.
- [33]) [34] 
+ [35]) [36] 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
@@ -871,17 +871,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `modelo-tese.out' has not changed.
-(rerunfilecheck)             Checksum: 2ADD8C484F90EB9E5DA165E51C48C251;2900.
+(rerunfilecheck)             Checksum: 78A1F78DF4ADD47FFA88218B972305DD;3403.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 10646 strings out of 493485
- 154570 string characters out of 3143527
- 282779 words of memory out of 3000000
- 13558 multiletter control sequences out of 15000+200000
+ 10663 strings out of 493485
+ 154776 string characters out of 3143527
+ 282832 words of memory out of 3000000
+ 13566 multiletter control sequences out of 15000+200000
  123348 words of font info for 131 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,12n,45p,1161b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,46p,1161b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts
@@ -890,10 +890,10 @@ elvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modelo-tese.pdf (37 pages, 485027 bytes).
+Output written on modelo-tese.pdf (39 pages, 487755 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 550 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 418 words of extra memory for PDF output out of 10000 (max. 10000000)
 
